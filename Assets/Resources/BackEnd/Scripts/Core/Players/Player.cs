@@ -23,8 +23,6 @@ public class Player : MonoBehaviour
     public float SpeedDef = 5f;
     public float SpeedOff = 5f;
 
-    public List<Object> inventary = new List<Object>();
-
 
     private void Start()
     {
@@ -109,15 +107,5 @@ public class Player : MonoBehaviour
     public void updateDamage(int damage)
     {
         this.damage += damage;
-    }
-
-    public void addItem(Object item)
-    {
-        inventary.Add(item);
-    }
-
-    public void removeItem(Object item) 
-    {
-        inventary.Remove(item); 
     }
 }

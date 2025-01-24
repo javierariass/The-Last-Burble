@@ -256,22 +256,6 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 236089509}
   m_Enabled: 1
-<<<<<<< Updated upstream
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52eb15d871c98e746b52290279b452f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Life: 5
-  DamageMin: 2
-  DamageMax: 3
-  SpeedMove: 1.5
-  PointRutine:
-  - {fileID: 506767281}
-  - {fileID: 0}
-  - {fileID: 2051224661}
---- !u!58 &236089516
-CircleCollider2D:
-=======
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 3a3966deccf56474c94812d3861e83b4, type: 2}
   m_CullingMode: 0
@@ -285,24 +269,10 @@ CircleCollider2D:
   m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &377713549
 GameObject:
->>>>>>> Stashed changes
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream
-  m_GameObject: {fileID: 236089509}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.0047360896}
-  serializedVersion: 2
-  m_Radius: 0.24576373
---- !u!1 &506767281
-=======
   serializedVersion: 6
   m_Component:
   - component: {fileID: 377713550}
@@ -418,7 +388,6 @@ Tilemap:
     e32: 0
     e33: 1
 --- !u!1 &444285763
->>>>>>> Stashed changes
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -89331,13 +89300,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-<<<<<<< Updated upstream
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
-=======
   m_Father: {fileID: 607361097}
   m_RootOrder: -1
->>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!483693784 &928594731
 TilemapRenderer:
