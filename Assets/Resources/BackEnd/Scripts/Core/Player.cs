@@ -37,11 +37,11 @@ public class Player : MonoBehaviour
         MoveY = Input.GetAxis("Vertical") * SpeedMove * Time.deltaTime;
 
         //Move the transform
-        Vector2 newPosition = PlayerTransform.position + new Vector3(MoveX,MoveY,0);
+        Vector2 newPosition = PlayerTransform.position + new Vector3(MoveX, MoveY, 0);
         PlayerTransform.position = newPosition;
 
         //
-        if(Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
 
         }
@@ -68,7 +68,7 @@ public class Player : MonoBehaviour
     public bool takeDamage(int damage)
     {
         bool isLive = true;
-        if(damage>=Life)
+        if (damage >= Life)
         {
             Life = 0;
             isLive=false;
