@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
     private float MoveX, MoveY;
 
     public Animator animator;
+    public GameObject playerMinigame;
 
     //Leveling
     public int ExperienceRequired = 5;
@@ -25,7 +26,7 @@ public class Player : MonoBehaviour
     public float SpeedOff = 5f;
 
 
-    public List<Object> inventory;
+    public List<GameObject> inventory;
 
     //Estates
     public bool inCinematic;
@@ -153,6 +154,24 @@ public class Player : MonoBehaviour
             SpeedMove -= 0.1f;
             SpeedDef -= 0.1f;
             SpeedOff -= 0.1f;
+        }
+    }
+
+    public void addItem(GameObject item)
+    {
+        inventory.Add(item);
+    }
+
+    public void deleteItem(GameObject item)
+    {
+        bool exist = false;
+        foreach(GameObject i in inventory)
+        {
+            if(i==item)
+            {
+                exist = true;
+                inventory.Remove(i);
+            }
         }
     }
 }
