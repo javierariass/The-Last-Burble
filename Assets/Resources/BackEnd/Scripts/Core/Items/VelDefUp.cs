@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class VelDefUpVelOffDown : MonoBehaviour
+public class VelDefUp : MonoBehaviour
 {
     public string effect = "Este item aumenta tu defensa (te mueves más rápido)";
     private Player player;
