@@ -35,7 +35,6 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(Life);
         MoveX = Input.GetAxis("Horizontal") * SpeedMove * Time.deltaTime;
         MoveY = Input.GetAxis("Vertical") * SpeedMove * Time.deltaTime;
 

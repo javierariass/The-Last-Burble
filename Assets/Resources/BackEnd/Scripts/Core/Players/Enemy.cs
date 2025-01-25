@@ -38,14 +38,16 @@ public class Enemy : MonoBehaviour
             while (i == PointIndex)
             {
                 PointIndex = Random.Range(0, PointRutine.Length);
-            }
+            }          
         }
-        //Start Combat
+
         if (collision.gameObject.CompareTag("Player"))
         {
+            Debug.Log("Start Battle");
             StartBattle();
         }
     }
+
 
     //Combat function
     private void StartBattle()
