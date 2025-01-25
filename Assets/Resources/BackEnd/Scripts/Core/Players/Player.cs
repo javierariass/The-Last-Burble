@@ -19,7 +19,7 @@ public class Player : MonoBehaviour
 
     //Attribute
     public int damage = 5;
-    public int LifeMax = 5;
+    public int LifeMax = 15;
     public float SpeedMove = 5f;
     public float SpeedDef = 5f;
     public float SpeedOff = 5f;
@@ -29,11 +29,13 @@ public class Player : MonoBehaviour
     {
         PlayerTransform = GetComponent<Transform>();
         animator = GetComponent<Animator>();
-        Life = LifeMax;
+        Life = 5;
+
     }
 
     private void Update()
     {
+        Debug.Log(Life);
         MoveX = Input.GetAxis("Horizontal") * SpeedMove * Time.deltaTime;
         MoveY = Input.GetAxis("Vertical") * SpeedMove * Time.deltaTime;
 
@@ -48,7 +50,7 @@ public class Player : MonoBehaviour
             transform.localScale = new Vector3(-3, 3, 1);
         else if (MoveX > 0)
             transform.localScale = new Vector3(3, 3, 1);
-        
+
 
 
 
@@ -66,17 +68,18 @@ public class Player : MonoBehaviour
     //Recovery Health
     public void recoveryHealth(int recovery)
     {
-        if(Life + recovery >= LifeMax)
-            Life = LifeMax;
+        if (Life + recovery >= LifeMax)
+            Life = LifeMax;  
         else
             Life += recovery;
+        
     }
 
     //Update Health
     public void updateHealth(int health)
     {
-        LifeMax+=health;
-        Life+=health;
+        LifeMax += health;
+        Life += health;
     }
 
 
@@ -87,12 +90,12 @@ public class Player : MonoBehaviour
         if (damage >= Life)
         {
             Life = 0;
-            isLive=false;
-            if(Level > 1)
+            isLive = false;
+            if (Level > 1)
                 Level--;
         }
         else
-            Life-=damage;
+            Life -= damage;
         return isLive;
     }
 
@@ -100,7 +103,7 @@ public class Player : MonoBehaviour
     //Take Experience
     public void takeExperience(int Experience)
     {
-        if(this.Experience + Experience >= ExperienceRequired)
+        if (this.Experience + Experience >= ExperienceRequired)
             Level++;
         else
             this.Experience += Experience;
