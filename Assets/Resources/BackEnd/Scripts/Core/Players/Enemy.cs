@@ -48,6 +48,11 @@ public class Enemy : MonoBehaviour
         }
     }
 
+    public void restarLife(int restar)
+    {
+        Life -= restar;
+    }
+
 
     //Combat function
     private void StartBattle()

@@ -128,6 +128,8 @@ public class Player : MonoBehaviour
         this.damage += damage;
     }
 
+    
+
 
     public void levelUp()
     {
