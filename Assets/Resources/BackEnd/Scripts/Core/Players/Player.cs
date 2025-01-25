@@ -12,7 +12,7 @@ public class Player : MonoBehaviour
     public Animator animator;
 
     //Leveling
-    private int ExperienceRequired = 5;
+    public int ExperienceRequired = 5;
     public int Experience = 0;
     public int Level = 1;
 
