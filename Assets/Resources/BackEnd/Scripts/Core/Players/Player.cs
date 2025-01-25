@@ -35,7 +35,6 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(Life);
         MoveX = Input.GetAxis("Horizontal") * SpeedMove * Time.deltaTime;
         MoveY = Input.GetAxis("Vertical") * SpeedMove * Time.deltaTime;
 
@@ -92,7 +91,7 @@ public class Player : MonoBehaviour
             Life = 0;
             isLive = false;
             if (Level > 1)
-                Level--;
+                desLevelUp();
         }
         else
             Life -= damage;
@@ -104,7 +103,7 @@ public class Player : MonoBehaviour
     public void takeExperience(int Experience)
     {
         if (this.Experience + Experience >= ExperienceRequired)
-            Level++;
+            levelUp();
         else
             this.Experience += Experience;
     }
@@ -127,5 +126,31 @@ public class Player : MonoBehaviour
     public void updateDamage(int damage)
     {
         this.damage += damage;
+    }
+
+
+    public void levelUp()
+    {
+        Level++;
+        damage++;
+        LifeMax += 5;
+        Life = LifeMax;
+        SpeedMove += 0.1f;
+        SpeedDef += 0.1f;
+        SpeedOff += 0.1f;
+    }
+
+    public void desLevelUp()
+    {
+        if(Level >1)
+        {
+            Level--;
+            damage--;
+            LifeMax -= 5;
+            Life = LifeMax;
+            SpeedMove -= 0.1f;
+            SpeedDef -= 0.1f;
+            SpeedOff -= 0.1f;
+        }
     }
 }
