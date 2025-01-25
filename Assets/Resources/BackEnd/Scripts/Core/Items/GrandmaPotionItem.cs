@@ -28,12 +28,13 @@ public class GrandmaPotionItem : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        player.updateHealth(recovery(accepted));
     }
 
     // Update is called once per fram
     void Update()
     {
-        player.updateHealth(recovery(accepted));
+        
     }
 }

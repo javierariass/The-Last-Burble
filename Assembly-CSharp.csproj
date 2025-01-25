@@ -36,11 +36,15 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Resources\BackEnd\Scripts\Core\Item.cs" />
-     <Compile Include="Assets\Resources\BackEnd\Scripts\Core\GrandmaPotionItem.cs" />
-     <Compile Include="Assets\Resources\BackEnd\Scripts\Core\Player.cs" />
-     <Compile Include="Assets\Resources\BackEnd\Scripts\Core\EnemyShoot.cs" />
-     <Compile Include="Assets\Resources\BackEnd\Scripts\Core\Enemy.cs" />
+     <Compile Include="Assets\Resources\BackEnd\Scripts\Core\Items\Item.cs" />
+     <Compile Include="Assets\Resources\BackEnd\Scripts\Core\Items\GrandmaPotionItem.cs" />
+     <Compile Include="Assets\Resources\BackEnd\Scripts\Core\Players\Player.cs" />
+     <Compile Include="Assets\Resources\BackEnd\Scripts\Core\Players\EnemyShoot.cs" />
+     <Compile Include="Assets\Resources\BackEnd\Scripts\Core\Players\Enemy.cs" />
+     <Compile Include="Assets\Resources\BackEnd\Scripts\Core\Items\SimplePotionItem.cs" />
+     <Compile Include="Assets\Resources\BackEnd\Scripts\Core\Items\DamageBoosterItem.cs" />
+     <Compile Include="Assets\Resources\BackEnd\Scripts\Core\Items\AtackTwiceItem.cs" />
+     <Compile Include="Assets\Resources\BackEnd\Scripts\Core\Items\VelDefUp.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity 2022.1.3f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
