@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
     private float MoveX, MoveY;
 
     public Animator animator;
+    public GameObject playerMinigame;
 
     //Leveling
     public int ExperienceRequired = 5;
@@ -25,42 +26,43 @@ public class Player : MonoBehaviour
     public float SpeedOff = 5f;
 
 
+    public List<GameObject> inventory;
+
+    //Estates
+    public bool inCinematic;
+    public bool isLive;
+
+
     private void Start()
     {
         PlayerTransform = GetComponent<Transform>();
         animator = GetComponent<Animator>();
         Life = 5;
-
+        inCinematic = false;
+        isLive = true;
     }
 
     private void Update()
     {
-        MoveX = Input.GetAxis("Horizontal") * SpeedMove * Time.deltaTime;
-        MoveY = Input.GetAxis("Vertical") * SpeedMove * Time.deltaTime;
-
-
-        if (MoveY != 0 || MoveX != 0)
-            animator.SetBool("inMove", true);
-        else
-            animator.SetBool("inMove", false);
-
-
-        if (MoveX < 0)
-            transform.localScale = new Vector3(-3, 3, 1);
-        else if (MoveX > 0)
-            transform.localScale = new Vector3(3, 3, 1);
-
-
-
-
-
-        Vector2 newPosition = PlayerTransform.position + new Vector3(MoveX, MoveY, 0);
-        PlayerTransform.position = newPosition;
-
-        //
-        if (Input.GetKeyDown(KeyCode.Space))
+        if(!inCinematic)
         {
+            MoveX = Input.GetAxis("Horizontal") * SpeedMove * Time.deltaTime;
+            MoveY = Input.GetAxis("Vertical") * SpeedMove * Time.deltaTime;
 
+
+            if (MoveY != 0 || MoveX != 0)
+                animator.SetBool("inMove", true);
+            else
+                animator.SetBool("inMove", false);
+
+
+            if (MoveX < 0)
+                transform.localScale = new Vector3(-3, 3, 1);
+            else if (MoveX > 0)
+                transform.localScale = new Vector3(3, 3, 1);
+
+            Vector2 newPosition = PlayerTransform.position + new Vector3(MoveX, MoveY, 0);
+            PlayerTransform.position = newPosition;
         }
     }
 
@@ -83,7 +85,7 @@ public class Player : MonoBehaviour
 
 
     //Take Damage
-    public bool takeDamage(int damage)
+    public void takeDamage(int damage)
     {
         bool isLive = true;
         if (damage >= Life)
@@ -95,7 +97,6 @@ public class Player : MonoBehaviour
         }
         else
             Life -= damage;
-        return isLive;
     }
 
 
@@ -153,6 +154,24 @@ public class Player : MonoBehaviour
             SpeedMove -= 0.1f;
             SpeedDef -= 0.1f;
             SpeedOff -= 0.1f;
+        }
+    }
+
+    public void addItem(GameObject item)
+    {
+        inventory.Add(item);
+    }
+
+    public void deleteItem(GameObject item)
+    {
+        bool exist = false;
+        foreach(GameObject i in inventory)
+        {
+            if(i==item)
+            {
+                exist = true;
+                inventory.Remove(i);
+            }
         }
     }
 }
