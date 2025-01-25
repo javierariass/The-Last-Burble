@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class EnemySpawnerController : MonoBehaviour
 {
-    public List<Object> spawners = new List<Object>();
+    public List<SpawnerShoot> spawners = new List<SpawnerShoot>();
+    private bool ShootSpawn = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,19 +16,24 @@ public class EnemySpawnerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        StartCoroutine(shootSpawner());
-    }
-
-    IEnumerator shootSpawner()
-    {
+       if(!ShootSpawn)
+       {
         int cont = 0;
         List<int> results = randomShoot();
         while(cont<5)
         {
-           // spawners[results[cont]].shoot();
+            spawners[results[cont]].Shoot();
             cont++;
         }
+        StartCoroutine(shootSpawner());
+       } 
+    }
+
+    IEnumerator shootSpawner()
+    {
+        ShootSpawn = true;
         yield return new WaitForSeconds(Random.Range(1,3));
+        ShootSpawn = false;
     }
     
     public List<int> randomShoot()
@@ -35,7 +42,7 @@ public class EnemySpawnerController : MonoBehaviour
 
         for (int i = 0; i < 5; i++)
         {
-            result.Add(Random.Range(1,20));
+            result.Add(Random.Range(1,spawners.Count));
         }
         return result;
     }
