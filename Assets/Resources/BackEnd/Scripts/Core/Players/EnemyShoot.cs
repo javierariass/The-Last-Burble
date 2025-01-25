@@ -5,13 +5,13 @@ using UnityEngine;
 public class EnemyShoot : MonoBehaviour
 {
     public int Damage = 0;
-    private Player player;
+    private GameObject player;
     private Vector3 Direction;
 
     public float SpeedMove = 1.5f;
     private void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        player = GameObject.FindGameObjectWithTag("object");
         Direction = player.transform.position;
         Destroy(gameObject,3);
     }
@@ -25,10 +25,10 @@ public class EnemyShoot : MonoBehaviour
     //Collision player damage
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("object"))
         {
             Debug.Log("Toch");
-            player.takeDamage(Damage);
+            //player.takeDamage(Damage);
         }
     }
 }
