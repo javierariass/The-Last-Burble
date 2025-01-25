@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     public int Life;
     private float MoveX, MoveY;
 
+    public Animator animator;
 
     //Leveling
     private int ExperienceRequired = 5;
@@ -27,6 +28,7 @@ public class Player : MonoBehaviour
     private void Start()
     {
         PlayerTransform = GetComponent<Transform>();
+        animator = GetComponent<Animator>();
         Life = LifeMax;
     }
 
@@ -35,7 +37,22 @@ public class Player : MonoBehaviour
         MoveX = Input.GetAxis("Horizontal") * SpeedMove * Time.deltaTime;
         MoveY = Input.GetAxis("Vertical") * SpeedMove * Time.deltaTime;
 
-        //Move the transform
+
+        if (MoveY != 0 || MoveX != 0)
+            animator.SetBool("inMove", true);
+        else
+            animator.SetBool("inMove", false);
+
+
+        if (MoveX < 0)
+            transform.localScale = new Vector3(-3, 3, 1);
+        else if (MoveX > 0)
+            transform.localScale = new Vector3(3, 3, 1);
+        
+
+
+
+
         Vector2 newPosition = PlayerTransform.position + new Vector3(MoveX, MoveY, 0);
         PlayerTransform.position = newPosition;
 
