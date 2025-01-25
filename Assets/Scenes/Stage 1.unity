@@ -137,9 +137,9 @@ GameObject:
   - component: {fileID: 236089514}
   - component: {fileID: 236089515}
   m_Layer: 0
-  m_Name: PLayer
+  m_Name: Player
   m_TagString: Untagged
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -184,7 +184,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 21300000, guid: a86c61e5bed184ddc884003f0c947bb4, type: 3}
+  m_Sprite: {fileID: -598380706, guid: 4eed10bc5887b2642aa3c086d877435e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -223,9 +223,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Life: 5
+  Experience: 0
+  Level: 1
+  damage: 5
   LifeMax: 5
   SpeedMove: 5
-  Experience: 0
+  SpeedDef: 5
+  SpeedOff: 5
 --- !u!50 &236089514
 Rigidbody2D:
   serializedVersion: 4
