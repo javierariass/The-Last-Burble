@@ -13,12 +13,13 @@ public class SimplePotionItem : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
-        player.recoveryHealth(recovery);
     }
 
     // Update is called once per frame
     void Update()
     {
         
+        player.recoveryHealth(recovery);
+        Destroy(gameObject);
     }
 }
