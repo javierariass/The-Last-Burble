@@ -5,11 +5,11 @@ using UnityEngine;
 public class EnemyShoot : MonoBehaviour
 {
     public int Damage = 0;
-    private Player player;
+    private Player Player;
 
     private void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        Player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
     }
 
     //Collision player damage
@@ -17,7 +17,7 @@ public class EnemyShoot : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            player.takeDamage(Damage);
+            Player.takeDamage(Damage);
         }
     }
 }
