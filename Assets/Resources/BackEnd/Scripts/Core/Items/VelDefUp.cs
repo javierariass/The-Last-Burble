@@ -15,12 +15,12 @@ public class VelDefUpVelOffDown : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
-        player.updateSpeedDef(modifyVelDef(player.SpeedDef));
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        player.updateSpeedDef(modifyVelDef(player.SpeedDef));
+        Destroy(gameObject);
     }
 }

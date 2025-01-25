@@ -16,12 +16,13 @@ public class DamageBoosterItem : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
-        player.updateDamage(damageBooster(player.damage));   
+        player.updateDamage(damageBooster(player.damage));    
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        player.updateDamage(damageBooster(player.damage));  
+        Destroy(gameObject);
     }
 }

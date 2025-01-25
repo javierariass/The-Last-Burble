@@ -9,12 +9,13 @@ public class AtackTwiceItem : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();   
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        player.updateSpeedDef(modifyVelDef(player.SpeedDef));  
+        Destroy(gameObject); 
     }
 }
