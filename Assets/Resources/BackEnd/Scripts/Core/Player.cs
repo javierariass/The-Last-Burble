@@ -43,7 +43,7 @@ public class Player : MonoBehaviour
     //Recovery Health
     public void recoveryHealth(float recovery)
     {
-        if(Life += recovery >= LifeMax)
+        if(Life + recovery >= LifeMax)
             Life = LifeMax;
         else
             Life += recovery;
@@ -59,7 +59,7 @@ public class Player : MonoBehaviour
             isLive=false;
         }
         else
-            life-=damage;
+            Life-=damage;
         return isLive;
     }
 }
