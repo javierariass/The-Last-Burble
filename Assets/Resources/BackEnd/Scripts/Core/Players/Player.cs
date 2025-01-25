@@ -20,7 +20,7 @@ public class Player : MonoBehaviour
     //Attribute
     public int damage = 5;
     public int LifeMax = 15;
-    public float SpeedMove = 5f;
+    public float SpeedMove = 1f;
     public float SpeedDef = 5f;
     public float SpeedOff = 5f;
 
