@@ -6,7 +6,8 @@ public class Player : MonoBehaviour
 {
     private Transform PlayerTransform;
 
-    public float Life = 5f;
+    public float Life;
+    public float LifeMax = 5f;
     
 
     //Movement
@@ -20,6 +21,7 @@ public class Player : MonoBehaviour
     private void Start()
     {
         PlayerTransform = GetComponent<Transform>();
+        Life = LifeMax;
     }
 
     private void Update()
@@ -36,6 +38,28 @@ public class Player : MonoBehaviour
         {
 
         }
+    }
 
+    //Recovery Health
+    public void recoveryHealth(float recovery)
+    {
+        if(Life += recovery >= LifeMax)
+            Life = LifeMax;
+        else
+            Life += recovery;
+    }
+
+
+    public bool takeDamage(float damage)
+    {
+        bool isLive = true;
+        if(damage>=Life)
+        {
+            Life = 0;
+            isLive=false;
+        }
+        else
+            life-=damage;
+        return isLive;
     }
 }
