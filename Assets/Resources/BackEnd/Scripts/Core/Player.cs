@@ -6,8 +6,8 @@ public class Player : MonoBehaviour
 {
     private Transform PlayerTransform;
 
-    public float Life;
-    public float LifeMax = 5f;
+    public int Life;
+    public int LifeMax = 5;
     
 
     //Movement
@@ -15,8 +15,15 @@ public class Player : MonoBehaviour
     private float MoveX, MoveY;
 
     //Leveling
-    private float ExperienceRequired = 5f;
-    public float Experience = 0;
+    private int ExperienceRequired = 5;
+    public int Experience = 0;
+    public int Level = 1;
+
+
+    //Attribute
+
+    public int streng;
+    
 
     private void Start()
     {
@@ -41,25 +48,45 @@ public class Player : MonoBehaviour
     }
 
     //Recovery Health
-    public void recoveryHealth(float recovery)
+    public void recoveryHealth(int recovery)
     {
-        if(Life += recovery >= LifeMax)
+        if(Life + recovery >= LifeMax)
             Life = LifeMax;
         else
             Life += recovery;
     }
 
+    //Update Health
+    public void updateHealth(int health)
+    {
+        LifeMax+=health;
+        Life+=health;
+    }
 
-    public bool takeDamage(float damage)
+
+    //Take Damage
+    public bool takeDamage(int damage)
     {
         bool isLive = true;
         if(damage>=Life)
         {
             Life = 0;
             isLive=false;
+            if(Level > 1)
+                Level--;
         }
         else
-            life-=damage;
+            Life-=damage;
         return isLive;
+    }
+
+
+    //Take Experience
+    public void takeExperience(int Experience)
+    {
+        if(this.Experience + Experience >= ExperienceRequired)
+            Level++;
+        else
+            this.Experience += Experience;
     }
 }
