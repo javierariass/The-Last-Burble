@@ -27,6 +27,7 @@ public class EnemyShoot : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            Debug.Log("Toch");
             player.takeDamage(Damage);
         }
     }

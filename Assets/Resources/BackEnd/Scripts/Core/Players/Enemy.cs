@@ -50,6 +50,6 @@ public class Enemy : MonoBehaviour
     //Combat function
     private void StartBattle()
     {
-
+        Debug.Log("Battle");
     }
 }
