@@ -5,7 +5,9 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    public string name;
     public int Life = 5;
+    public int expDropped;
     public int DamageMin = 2;
     public float DamageMax = 3;
     public float SpeedMove = 2f;

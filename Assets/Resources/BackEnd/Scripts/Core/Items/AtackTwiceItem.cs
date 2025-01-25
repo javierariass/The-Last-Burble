@@ -15,7 +15,6 @@ public class AtackTwiceItem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        player.updateSpeedDef(modifyVelDef(player.SpeedDef));  
         Destroy(gameObject); 
     }
 }
