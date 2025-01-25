@@ -29,12 +29,12 @@ public class GrandmaPotionItem : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
-        player.updateHealth(recovery(accepted));
     }
 
     // Update is called once per fram
     void Update()
     {
-        
+        player.updateHealth(recovery(accepted));
+        Destroy(gameObject);
     }
 }
