@@ -32,7 +32,7 @@ Transform:
   - {fileID: 582514445016087978}
   - {fileID: 582514445580357650}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &582514445016087979
 GameObject:
@@ -241,7 +241,7 @@ MonoBehaviour:
   expDropped: 2
   DamageMin: 2
   DamageMax: 3
-  SpeedMove: 2
+  SpeedMove: 1.5
   PointRutine:
   - {fileID: 582514445915178639}
   - {fileID: 582514445016087979}
