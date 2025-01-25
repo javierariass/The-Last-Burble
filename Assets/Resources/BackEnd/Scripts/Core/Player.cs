@@ -7,12 +7,8 @@ public class Player : MonoBehaviour
     private Transform PlayerTransform;
 
     public int Life;
-    public int LifeMax = 5;
-    
-
-    //Movement
-    public float SpeedMove = 5f;
     private float MoveX, MoveY;
+
 
     //Leveling
     private int ExperienceRequired = 5;
@@ -21,9 +17,12 @@ public class Player : MonoBehaviour
 
 
     //Attribute
+    public int damage = 5;
+    public int LifeMax = 5;
+    public float SpeedMove = 5f;
+    public float SpeedDef = 5f;
+    public float SpeedOff = 5f;
 
-    public int streng;
-    
 
     private void Start()
     {
@@ -88,5 +87,25 @@ public class Player : MonoBehaviour
             Level++;
         else
             this.Experience += Experience;
+    }
+
+    public void updateSpeedMov(float speed)
+    {
+        SpeedMove += speed;
+    }
+
+    public void updateSpeedOff(float speed)
+    {
+        SpeedOff += speed;
+    }
+
+    public void updateSpeedDef(float speed)
+    {
+        SpeedDef += speed;
+    }
+
+    public void updateDamage(int damage)
+    {
+        this.damage += damage;
     }
 }
