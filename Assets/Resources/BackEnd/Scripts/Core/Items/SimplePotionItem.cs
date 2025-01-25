@@ -18,7 +18,6 @@ public class SimplePotionItem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
         player.recoveryHealth(recovery);
         Destroy(gameObject);
     }

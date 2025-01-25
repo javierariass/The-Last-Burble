@@ -12,7 +12,7 @@ public class Player : MonoBehaviour
     public Animator animator;
 
     //Leveling
-    private int ExperienceRequired = 5;
+    public int ExperienceRequired = 5;
     public int Experience = 0;
     public int Level = 1;
 
@@ -20,7 +20,7 @@ public class Player : MonoBehaviour
     //Attribute
     public int damage = 5;
     public int LifeMax = 15;
-    public float SpeedMove = 5f;
+    public float SpeedMove = 1f;
     public float SpeedDef = 5f;
     public float SpeedOff = 5f;
 

@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{6573E2D2-DE49-9CB6-DC81-B9A2564A501B}</ProjectGuid>
+    <ProjectGuid>{A3D02EB2-6652-9DF6-E415-EFB00DE58184}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -53,7 +53,7 @@
     <UnityVersion>2022.1.3f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Resources\BackEnd\Scripts\Core\Items\SimplePotionItem.cs" />
@@ -68,6 +68,7 @@
     <Compile Include="Assets\Resources\BackEnd\Scripts\Core\Items\AtackTwiceItem.cs" />
     <Compile Include="Assets\Resources\BackEnd\Scripts\Core\EnemySpawnerController.cs" />
     <Compile Include="Assets\Resources\BackEnd\Scripts\Core\Players\SpawnerShoot.cs" />
+    <Compile Include="Assets\Resources\BackEnd\Scripts\UI\Stats.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -97,7 +98,6 @@
     <None Include="Assets\Resources\FrontEnd\Sprites\4Casitas\- READ ME -.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
-    <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\Resources\FrontEnd\Sprites\Otros\swamp_ [version 1.0]\swamp_ [version 1.0]\- READ ME -.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
