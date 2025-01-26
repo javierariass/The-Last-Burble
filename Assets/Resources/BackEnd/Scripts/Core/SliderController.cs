@@ -51,8 +51,10 @@ public class SliderController : MonoBehaviour
         {
             float result = hitBar.value;
             int resultInt = (int)result;
-            Debug.Log("Valor actual del slider: " + resultInt);
-            // Aquí puedes hacer lo que necesites con el valor
+            GetComponent<BattleController>().atacking(resultInt);
+            GetComponent<BattleController>().InitDefense();
+            GetComponent<BattleController>().SliderHit.SetActive(false);            
+            
         }
     }
 }

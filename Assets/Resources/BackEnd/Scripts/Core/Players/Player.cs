@@ -31,24 +31,25 @@ public class Player : MonoBehaviour
     //Estates
     public bool inCinematic;
     public bool isLive;
-
+    public GameObject PanelCombat;
 
     private void Start()
     {
         PlayerTransform = GetComponent<Transform>();
         animator = GetComponent<Animator>();
-        Life = 5;
+        Life = LifeMax;
         inCinematic = false;
         isLive = true;
     }
 
+    //Movement
     private void Update()
     {
-        if(!inCinematic)
+        if (!inCinematic)
         {
             MoveX = Input.GetAxis("Horizontal") * SpeedMove * Time.deltaTime;
             MoveY = Input.GetAxis("Vertical") * SpeedMove * Time.deltaTime;
-
+            GetComponent<CapsuleCollider2D>().enabled = true;
 
             if (MoveY != 0 || MoveX != 0)
                 animator.SetBool("inMove", true);
@@ -64,6 +65,8 @@ public class Player : MonoBehaviour
             Vector2 newPosition = PlayerTransform.position + new Vector3(MoveX, MoveY, 0);
             PlayerTransform.position = newPosition;
         }
+        else GetComponent<CapsuleCollider2D>().enabled = false;
+        
     }
 
     //Recovery Health
@@ -104,7 +107,11 @@ public class Player : MonoBehaviour
     public void takeExperience(int Experience)
     {
         if (this.Experience + Experience >= ExperienceRequired)
+        {
+            this.Experience += Experience;
             levelUp();
+        }
+            
         else
             this.Experience += Experience;
     }
@@ -141,6 +148,8 @@ public class Player : MonoBehaviour
         SpeedMove += 0.1f;
         SpeedDef += 0.1f;
         SpeedOff += 0.1f;
+        Experience -= ExperienceRequired;
+        ExperienceRequired += 10;
     }
 
     public void desLevelUp()
@@ -154,6 +163,10 @@ public class Player : MonoBehaviour
             SpeedMove -= 0.1f;
             SpeedDef -= 0.1f;
             SpeedOff -= 0.1f;
+        }
+        else
+        {
+            Life = LifeMax;
         }
     }
 

@@ -20,15 +20,16 @@ public class EnemyShoot : MonoBehaviour
     {
         //Movement
         transform.position = Vector2.MoveTowards(transform.position, Direction, SpeedMove * Time.deltaTime);
+        if (!GameObject.FindGameObjectWithTag("BattleController").GetComponent<BattleController>().inDefense) Destroy(gameObject);
+        if (transform.position == Direction) Destroy(gameObject);
     }
 
     //Collision player damage
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("object"))
+        if (collision.gameObject.CompareTag("object") && GameObject.FindGameObjectWithTag("BattleController").GetComponent<BattleController>().inDefense)
         {
-            Debug.Log("Toch");
-            //player.takeDamage(Damage);
+            collision.gameObject.GetComponent<PlayerCorePerson>().player.takeDamage(Damage);
         }
     }
 }
