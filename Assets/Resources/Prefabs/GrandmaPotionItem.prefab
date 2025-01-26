@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2474415835892153319}
   - component: {fileID: 2574343448857100119}
   - component: {fileID: 4258171879935174788}
+  - component: {fileID: -5403319060236710201}
   m_Layer: 0
   m_Name: GrandmaPotionItem
   m_TagString: Untagged
@@ -98,3 +99,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   accepted: 0
+--- !u!114 &-5403319060236710201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1360569348197174169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ab6f040b8fb68e468f05ce375bccd29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: GrandmaPotionItem
+  description: Ganas lo que mereces

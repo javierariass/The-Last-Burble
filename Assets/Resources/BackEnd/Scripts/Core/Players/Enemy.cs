@@ -25,7 +25,7 @@ public class Enemy : MonoBehaviour
     private BattleController Bc;
     public int attackDuration = 5;
     public GameObject uiUser;
-
+    private ExitCombat HistCombat;
 
     // Start is called before the first frame update
     void Start()
@@ -38,6 +38,7 @@ public class Enemy : MonoBehaviour
         Bc = GameObject.FindGameObjectWithTag("BattleController").GetComponent<BattleController>();
         Life = LifeMax;
         uiUser = GameObject.FindGameObjectWithTag("uiUser");
+        HistCombat = GameObject.FindGameObjectWithTag("InfoCombat").GetComponent<ExitCombat>();
     }
 
 
@@ -45,7 +46,7 @@ public class Enemy : MonoBehaviour
     void Update()
     {
         //Movement
-        if(!Person.GetComponent<PlayerCorePerson>().player.inCinematic) transform.position = Vector2.MoveTowards(transform.position, PointRutine[PointIndex].transform.position, SpeedMove * Time.deltaTime);
+        if (!Person.GetComponent<PlayerCorePerson>().player.inCinematic) transform.position = Vector2.MoveTowards(transform.position, PointRutine[PointIndex].transform.position, SpeedMove * Time.deltaTime);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -57,13 +58,13 @@ public class Enemy : MonoBehaviour
             while (i == PointIndex)
             {
                 PointIndex = Random.Range(0, PointRutine.Length);
-            }          
+            }
         }
 
         if (collision.gameObject.CompareTag("Player"))
         {
             Debug.Log("Start Battle");
-            
+
             StartBattle(collision.gameObject.GetComponent<Player>());
         }
     }
@@ -89,26 +90,33 @@ public class Enemy : MonoBehaviour
                 {
                     Probabilidad = Random.Range(0, droppedItem.Length);
                     GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().addItem(droppedItem[Probabilidad]);
+                    HistCombat.Droped = droppedItem[Probabilidad];
                 }
             }
 
             //Eliminar objeto
+            GameObject player = GameObject.FindWithTag("Player");
+            HistCombat.Pos = player.transform.position;
+            HistCombat.particlePrefab = particlePrefab;
+            HistCombat.enemy = this;
+            HistCombat.GenerateDatos();
             uiUser.SetActive(true);
             Destroy(gameObject);
-            GameObject player = GameObject.FindWithTag("Player");
-            Instantiate(particlePrefab, player.transform.position, Quaternion.identity);
+
+
         }
     }
 
 
     //Combat function
     private void StartBattle(Player player)
-    {       
+    {
         player.PanelCombat.SetActive(true);
         Person.GetComponent<PlayerCorePerson>().player.inCinematic = true;
         Bc.enemy = gameObject.GetComponent<Enemy>();
         uiUser.SetActive(false);
-        
+
+
     }
 
     public void ChangePosition()
@@ -117,7 +125,14 @@ public class Enemy : MonoBehaviour
         cameraVirtual.LookAt = Person.transform;
         cameraVirtual.GetComponent<CinemachineConfiner>().m_BoundingShape2D = confiner;
         cameraVirtual.GetComponent<CinemachineConfiner>().InvalidatePathCache();
-        Bc.InitBatle();
+        if (Bc.TutorialComplete)
+        {
+            Bc.InitBatle();
+        }
+        else
+        {
+            Bc.InitTutorial();
+        }
     }
 
 

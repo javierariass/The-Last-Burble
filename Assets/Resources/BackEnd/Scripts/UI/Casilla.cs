@@ -23,12 +23,14 @@ public class Casilla : MonoBehaviour, IPointerDownHandler
             Text.text = Cantidad.ToString();
             Sprite.sprite = Item.GetComponent<SpriteRenderer>().sprite;
             inventory.casillaSelected = this;
+            inventory.Description.text = Item.GetComponent<Item>().description;
         }
         else
         {
             Text.text = "";
             Sprite.sprite = defaultSprite;
             inventory.casillaSelected = null;
+            inventory.Description.text = "";
         }
     }
 }

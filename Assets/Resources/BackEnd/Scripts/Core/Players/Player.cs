@@ -78,7 +78,7 @@ public class Player : MonoBehaviour
     {
         lifeText.text = "Vida: " + Life + "/" + LifeMax;
         levelText.text = "Nivel: " + Level;
-        expText.text = "Exp: " + Experience + "/" + ExperienceRequired;
+        expText.text = "Burbujas: " + Experience + "/" + ExperienceRequired;
     }
 
     //Recovery Health
@@ -157,8 +157,10 @@ public class Player : MonoBehaviour
         SpeedMove += 0.1f;
         SpeedDef += 0.1f;
         SpeedOff += 0.1f;
-        Experience -= ExperienceRequired;
+        int ExperienciaExtra = Experience - ExperienceRequired;
+        Experience = 0;
         ExperienceRequired += 10;
+        takeExperience(ExperienciaExtra);
     }
 
     public void desLevelUp()
@@ -176,6 +178,7 @@ public class Player : MonoBehaviour
         else
         {
             Life = LifeMax;
+            Experience = 0;
         }
     }
 

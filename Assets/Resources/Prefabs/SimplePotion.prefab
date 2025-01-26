@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4182445303972875966}
   - component: {fileID: 6485569133972700695}
   - component: {fileID: 1043095262220015314}
+  - component: {fileID: -1061970034269232473}
   m_Layer: 0
   m_Name: SimplePotion
   m_TagString: Untagged
@@ -98,3 +99,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   effect: Este item recupera 5 puntos de vida
+--- !u!114 &-1061970034269232473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3997165312029643382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ab6f040b8fb68e468f05ce375bccd29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: SimplePotion
+  description: Este item recupera 5 puntos de vida

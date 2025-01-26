@@ -19,7 +19,9 @@ public class BattleController : MonoBehaviour
     private int Counterlife;
     public Transform Inventory;
     public GameObject uiUser;
-
+    public bool TutorialComplete = false;
+    private int PasoTutorial = 0;
+    public GameObject[] CombatTutorial;
     public void atacking(int damage)
     {
         int atack = 0;
@@ -67,6 +69,7 @@ public class BattleController : MonoBehaviour
         {
             LoseBatle();
         }
+
     }
 
     private void LoseBatle()
@@ -131,16 +134,41 @@ public class BattleController : MonoBehaviour
     {
         CombatEnabled = true;
         CombatSystem.SetActive(false);
-        SliderHit.SetActive(true);
+
+        if (TutorialComplete)
+        {
+            SliderHit.SetActive(true);
+        }
+        else if(!TutorialComplete && PasoTutorial == 1)
+        {
+            CombatTutorial[1].SetActive(true);
+            CombatTutorial[1].GetComponent<dialogScript>().CombatAction = SliderHit;
+            PasoTutorial++;
+        }
     }
 
     public void InitDefense()
     {
         Person.transform.position = SpawnObject.transform.position;
-        StartCoroutine(Defense());
+        if (TutorialComplete) StartCoroutine(Defense());
+        else if(!TutorialComplete && PasoTutorial == 2)
+        {
+            CombatTutorial[2].SetActive(true);
+            CombatTutorial[2].GetComponent<dialogScript>().bc = this;
+            PasoTutorial++;
+        }
     }
 
-    IEnumerator Defense()
+    public void InitTutorial()
+    {
+        InBatle = true;
+        Person.SetActive(false);
+        Combat.SetActive(true);
+        CombatTutorial[0].GetComponent<dialogScript>().CombatAction = CombatSystem;
+        CombatTutorial[0].SetActive(true);
+        PasoTutorial++;
+    }
+    public IEnumerator Defense()
     {
         DefenseZone.SetActive(true);
         DefenseZone.GetComponent<EnemySpawnerController>().ShootSpawn = false;
@@ -150,6 +178,14 @@ public class BattleController : MonoBehaviour
         DefenseZone.SetActive(false);
         Person.SetActive(false);
         inDefense = false;
-        InitBatle();
+        if(TutorialComplete) InitBatle();
+        else if(PasoTutorial == 3)
+        {
+            TutorialComplete = true;
+            CombatTutorial[3].SetActive(true);
+            CombatTutorial[3].GetComponent<dialogScript>().bc = this;
+            CombatTutorial[3].GetComponent<dialogScript>().EndTutorial= true;
+            
+        }
     }
 }

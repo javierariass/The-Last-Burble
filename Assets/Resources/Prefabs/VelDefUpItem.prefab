@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8868144642779369547}
   - component: {fileID: 8868144642779369544}
   - component: {fileID: 1766531397956658774}
+  - component: {fileID: -304281103682123126}
   m_Layer: 0
   m_Name: VelDefUpItem
   m_TagString: Untagged
@@ -98,3 +99,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   effect: "Este item aumenta tu defensa (te mueves m\xE1s r\xE1pido)"
+--- !u!114 &-304281103682123126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8868144642779369545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ab6f040b8fb68e468f05ce375bccd29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: VelDefUpItem
+  description: "Este item aumenta tu defensa (te mueves m\xE1s r\xE1pido)"

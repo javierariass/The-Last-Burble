@@ -15,6 +15,13 @@ public class dialogScript : MonoBehaviour
 
     int index;
 
+    public Player player;
+
+    public GameObject CombatAction;
+
+    public BattleController bc;
+
+    public bool EndTutorial = false;
 
     void Start()
     {
@@ -60,8 +67,12 @@ public class dialogScript : MonoBehaviour
             StartCoroutine(writeLine());
         }
         else{
-            animator.SetTrigger("Traslade");
-            gameObject.SetActive(false);        
+            if(animator != null)animator.SetTrigger("Traslade");
+            if (CombatAction != null) CombatAction.SetActive(true);
+            if (bc != null && !EndTutorial) bc.StartCoroutine(bc.Defense());
+            if (EndTutorial) bc.InitBatle();
+            gameObject.SetActive(false);
+            if (player != null) player.inCinematic = false;
         }
     }
 }
