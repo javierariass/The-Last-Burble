@@ -86,6 +86,7 @@
     <Compile Include="Assets\Resources\BackEnd\Scripts\UI\PortalStart.cs" />
     <Compile Include="Assets\Resources\BackEnd\Scripts\UI\PortalPanel.cs" />
     <Compile Include="Assets\Resources\BackEnd\Scripts\UI\EarthTransition.cs" />
+    <Compile Include="Assets\Resources\BackEnd\Scripts\UI\ExitMenu.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
