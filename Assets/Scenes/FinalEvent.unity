@@ -394,7 +394,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 313933750}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.26, y: -1.38, z: 0.001209259}
+  m_LocalPosition: {x: 4.79, y: 2.84, z: 0.001209259}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -595,7 +595,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &826157391
 GameObject:
@@ -899,17 +899,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogText: {fileID: 826157393}
   lines:
-  - "Burbuja: El mundo colaps\xF3 bajo el peso de nuestra indiferencia. Ahora, la
-    \xFAltima burbuja de ox\xEDgeno depende de ti."
-  - "Burbuja: \xBFSer\xE1s capaz de restaurar la esperanza o sucumbir\xE1s al caos?"
-  - "H\xE9roe: Nunca imagin\xE9 que el aire ser\xEDa un lujo. Todo lo que queda ahora
-    son fragmentos de un mundo que olvid\xF3 cuidarse."
-  - "H\xE9roe: Pero mientras quede una burbuja, queda esperanza. No voy a fallar."
-  - "Burbuja: Prep\xE1rate, todo lo que enfrentes aqu\xED reflejar\xE1 los errores
-    del pasado. La pobreza, la corrupci\xF3n y la codicia tratar\xE1n de aplastarte."
-  - "Burbuja: pero cada victoria ser\xE1 un paso hacia un nuevo comienzo. No olvides:
-    cada decisi\xF3n cuenta, y cada burbuja te acerca m\xE1s a salvarnos a todos."
-  - 'Burbuja: Dirigete al portal para comenzar con tu entrenamiento..'
+  - "Burbuja: \xA1Incre\xEDble!"
+  - "Burbuja: Has vencido a Greed, \"El Se\xF1or de la Codicia\""
+  - "Burbuja: \xBFC\xF3mo te fue recolectando burbujas?"
+  - "H\xE9roe: Ac\xE1 te las traigo."
+  - "Burbuja: \xA1Muchas gracias! "
+  - 'Burbuja: Ahora recupero parte de mi fuerza'
+  - "Burbuja: Conf\xEDo en ti para seguir derrotando a los se\xF1ores que nos trajeron
+    estos problemas."
   textSpeed: 0.078
   animator: {fileID: 1580704647}
   player: {fileID: 0}
@@ -955,123 +952,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1231609253}
   m_CullTransparentMesh: 1
---- !u!1 &1313521711
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1313521714}
-  - component: {fileID: 1313521713}
-  - component: {fileID: 1313521712}
-  - component: {fileID: 1313521715}
-  m_Layer: 0
-  m_Name: Portal
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1313521712
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1313521711}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 558e1637d3d672042af45f3b57d37000, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  panel: {fileID: 935748231}
-  Background: {fileID: 2118445368}
-  player: {fileID: 313933757}
-  burble: {fileID: 1580704646}
---- !u!60 &1313521713
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1313521711}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.87490654, y: 0.60587}
-      - {x: 0.19043589, y: 0.7743778}
-      - {x: -0.12698555, y: 0.85890484}
-      - {x: -0.5212984, y: 0.6845765}
-      - {x: -0.8966954, y: 0.4631486}
-      - {x: -1.0780423, y: 0.29490736}
-      - {x: -1.3399506, y: -0.19890928}
-      - {x: -1.1116991, y: -0.7192304}
-      - {x: -0.70204115, y: -0.9394064}
-      - {x: -0.47490925, y: -0.9642216}
-      - {x: -0.36858416, y: -0.95213366}
-      - {x: 0.4120407, y: -0.9244169}
-      - {x: 0.6301142, y: -0.80901694}
-      - {x: 0.7615404, y: -0.7974539}
-      - {x: 0.9644065, y: -0.7146163}
-      - {x: 1.0642304, y: -0.5661154}
-      - {x: 1.0219021, y: -0.63666296}
-      - {x: 1.1708026, y: -0.5335562}
-      - {x: 1.2383981, y: -0.41765833}
-      - {x: 1.2887592, y: -0.28356647}
-      - {x: 1.2755756, y: 0.3372361}
-  m_UseDelaunayMesh: 0
---- !u!4 &1313521714
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1313521711}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.7390504, y: 3.0725102, z: 0.022118112}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1313521715
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1313521711}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b83ea87208e87fe4f8cc15137c88d586, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1330239580
 GameObject:
   m_ObjectHideFlags: 0
@@ -1477,7 +1357,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1472184763
 MonoBehaviour:
@@ -1675,7 +1555,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1580704646}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.82, y: -1.95, z: 0.01413723}
+  m_LocalPosition: {x: 6.46, y: -2.41, z: 0.01413723}
   m_LocalScale: {x: 4, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
