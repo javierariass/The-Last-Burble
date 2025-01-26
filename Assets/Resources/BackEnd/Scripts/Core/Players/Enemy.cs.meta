@@ -3,7 +3,12 @@ guid: 52eb15d871c98e746b52290279b452f2
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - Person: {instanceID: 0}
+  - cameraVirtual: {instanceID: 0}
+  - Camera: {instanceID: 0}
+  - particlePrefab: {fileID: 7795993640270742686, guid: cd857b69e238df84ab48d3881eab03ed, type: 3}
+  - confiner: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
