@@ -23,6 +23,8 @@ public class dialogScript : MonoBehaviour
 
     public bool EndTutorial = false;
 
+    public BoxCollider2D collider;
+
     void Start()
     {
         dialogText.text = string.Empty;
@@ -71,6 +73,7 @@ public class dialogScript : MonoBehaviour
             if (CombatAction != null) CombatAction.SetActive(true);
             if (bc != null && !EndTutorial) bc.StartCoroutine(bc.Defense());
             if (EndTutorial) bc.InitBatle();
+            if (collider != null) collider.size = new Vector2(3f, 3f);
             gameObject.SetActive(false);
             if (player != null) player.inCinematic = false;
         }
