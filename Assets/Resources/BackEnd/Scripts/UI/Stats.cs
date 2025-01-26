@@ -24,7 +24,7 @@ public class Stats : MonoBehaviour
         MoveVel.text = "Move Vel: " + player.SpeedMove.ToString();
 
         //Apertura y cierre por acceso directo
-        if(Input.GetKeyDown(KeyCode.C))
+        if(Input.GetKeyDown(KeyCode.C) && !player.inCinematic)
         {
             if (Active)
             {

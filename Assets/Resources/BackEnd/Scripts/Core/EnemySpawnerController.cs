@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemySpawnerController : MonoBehaviour
 {
     public List<SpawnerShoot> spawners = new List<SpawnerShoot>();
-    private bool ShootSpawn = false;
+    public bool ShootSpawn = false;
 
     // Start is called before the first frame update
     void Start()
