@@ -30,6 +30,7 @@ public class EnemyShoot : MonoBehaviour
         if (GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().inCinematic)
         {
             collision.gameObject.GetComponent<PlayerCorePerson>().player.takeDamage(Damage);
+            Destroy(gameObject);
         }
     }
 }

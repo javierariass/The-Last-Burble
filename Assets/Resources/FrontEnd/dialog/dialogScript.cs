@@ -22,9 +22,10 @@ public class dialogScript : MonoBehaviour
     public BattleController bc;
 
     public bool EndTutorial = false;
-
+    
     public BoxCollider2D collider;
-    private AudioSource Audio;
+
+    public AudioSource Audio;
     void Start()
     {
         dialogText.text = string.Empty;
@@ -58,11 +59,9 @@ public class dialogScript : MonoBehaviour
     IEnumerator writeLine(){
 
         foreach (char letter in lines[index].ToCharArray()){
-            dialogText.text += letter;        
-            //Audio.Play();
+            dialogText.text += letter;             
             yield return new WaitForSeconds(textSpeed);
         }
-
     }
 
     public void nextLine(){
@@ -78,7 +77,7 @@ public class dialogScript : MonoBehaviour
             if (EndTutorial) bc.InitBatle();
             if (collider != null) collider.size = new Vector2(3f, 3f);
             gameObject.SetActive(false);
-            if (player != null) player.inCinematic = false;
+            if (player != null) player.inCinematic = false;           
         }
     }
 }
