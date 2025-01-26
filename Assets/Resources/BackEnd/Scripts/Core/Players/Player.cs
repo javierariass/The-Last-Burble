@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Player : MonoBehaviour
 {
@@ -11,6 +12,10 @@ public class Player : MonoBehaviour
 
     public Animator animator;
     public GameObject playerMinigame;
+
+    public TextMeshProUGUI lifeText;
+    public TextMeshProUGUI levelText;
+    public TextMeshProUGUI expText;
 
     //Leveling
     public int ExperienceRequired = 5;
@@ -66,7 +71,14 @@ public class Player : MonoBehaviour
             PlayerTransform.position = newPosition;
         }
         else GetComponent<CapsuleCollider2D>().enabled = false;
-        
+        updateText();
+    }
+
+    public void updateText()
+    {
+        lifeText.text = "Vida: " + Life + "/" + LifeMax;
+        levelText.text = "Nivel: " + Level;
+        expText.text = "Exp: " + Experience + "/" + ExperienceRequired;
     }
 
     //Recovery Health

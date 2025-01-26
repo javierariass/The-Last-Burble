@@ -18,6 +18,7 @@ public class BattleController : MonoBehaviour
     public TextMeshProUGUI EnemyName, PlayerLife, EnemyLife;
     private int Counterlife;
     public Transform Inventory;
+    public GameObject uiUser;
 
     public void atacking(int damage)
     {
@@ -54,7 +55,6 @@ public class BattleController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         Counterlife = 3;
     }
@@ -87,6 +87,7 @@ public class BattleController : MonoBehaviour
             Combat.SetActive(false);
             enemy = null;
             Counterlife--;
+            uiUser.SetActive(true);
         }
         else SceneManager.LoadScene(0);
     }
