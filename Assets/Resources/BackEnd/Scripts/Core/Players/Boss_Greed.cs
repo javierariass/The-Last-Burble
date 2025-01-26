@@ -20,6 +20,14 @@ public class Boss_Greed : MonoBehaviour
     }
     private void OnDestroy()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(3);
+    }
+
+    private void Update()
+    {
+        if(collider2D == null)
+        {
+            Destroy(gameObject);
+        }
     }
 }
