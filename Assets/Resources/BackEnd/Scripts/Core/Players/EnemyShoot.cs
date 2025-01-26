@@ -27,7 +27,7 @@ public class EnemyShoot : MonoBehaviour
     //Collision player damage
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("object") && GameObject.FindGameObjectWithTag("BattleController").GetComponent<BattleController>().inDefense)
+        if (GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().inCinematic)
         {
             collision.gameObject.GetComponent<PlayerCorePerson>().player.takeDamage(Damage);
         }

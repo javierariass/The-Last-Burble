@@ -25,8 +25,8 @@ public class Player : MonoBehaviour
     public float SpeedDef = 5f;
     public float SpeedOff = 5f;
 
-
-    public List<GameObject> inventory;
+    //Inventory
+    public Casilla[] Inventory;
 
     //Estates
     public bool inCinematic;
@@ -136,9 +136,6 @@ public class Player : MonoBehaviour
         this.damage += damage;
     }
 
-    
-
-
     public void levelUp()
     {
         Level++;
@@ -172,18 +169,32 @@ public class Player : MonoBehaviour
 
     public void addItem(GameObject item)
     {
-        inventory.Add(item);
-    }
-
-    public void deleteItem(GameObject item)
-    {
-        bool exist = false;
-        foreach(GameObject i in inventory)
+        bool encontrado = false;
+        for(int i = 0; i < Inventory.Length; i++)
         {
-            if(i==item)
+            if (Inventory[i].Item != null)
             {
-                exist = true;
-                inventory.Remove(i);
+                if (Inventory[i].Item.GetComponent<Item>().name == item.GetComponent<Item>().name)
+                {
+                    Inventory[i].Cantidad++;
+                    encontrado = true;
+                    break;
+                }
+            }
+        }
+
+        if (!encontrado)
+        {
+            for (int i = 0; i < Inventory.Length; i++)
+            {
+                if (Inventory[i].Item == null)
+                {
+                    Inventory[i].Item = item;
+                    Inventory[i].Cantidad = 1;
+                    Inventory[i].Sprite.sprite = item.GetComponent<SpriteRenderer>().sprite;
+                    Inventory[i].Text.text = "1";
+                    break;
+                }
             }
         }
     }

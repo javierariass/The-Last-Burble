@@ -47,7 +47,7 @@ public class SliderController : MonoBehaviour
     void Update()
     {
         // Al pulsar la barra espaciadora, devuelve el valor actual
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && GetComponent<BattleController>().CombatEnabled)
         {
             float result = hitBar.value;
             int resultInt = (int)result;

@@ -11,8 +11,10 @@ public class BattleController : MonoBehaviour
     public GameObject CombatSystem,DefenseZone,Combat,Person,SliderHit,SpawnObject;
     public GameObject[] SpawnPoint;
     public Enemy enemy;
+    public SpriteRenderer Enemy;
     private Player player;
     private bool InBatle = false;
+    public bool CombatEnabled = false;
     public TextMeshProUGUI EnemyName, PlayerLife, EnemyLife;
     private int Counterlife;
 
@@ -44,6 +46,7 @@ public class BattleController : MonoBehaviour
             atack = player.damage;
         }
         enemy.restarLife(atack);
+        CombatEnabled = false;
     }
 
 
@@ -91,6 +94,7 @@ public class BattleController : MonoBehaviour
     {
         if(enemy != null)
         {
+            Enemy.sprite = enemy.GetComponent<SpriteRenderer>().sprite;
             InBatle = true;
             player.inCinematic = true;
             Combat.SetActive(true);
@@ -109,6 +113,7 @@ public class BattleController : MonoBehaviour
 
     public void InitAttack()
     {
+        CombatEnabled = true;
         CombatSystem.SetActive(false);
         SliderHit.SetActive(true);
     }

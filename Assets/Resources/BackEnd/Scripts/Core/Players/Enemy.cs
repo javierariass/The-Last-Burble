@@ -77,6 +77,19 @@ public class Enemy : MonoBehaviour
             GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().inCinematic = false;
             Bc.Combat.SetActive(false);
             GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().takeExperience(expDropped);
+
+            //Dropeo
+            if (droppedItem.Length != 0)
+            {
+                int Probabilidad = Random.Range(0, 11);
+                if (Probabilidad > 6)
+                {
+                    Probabilidad = Random.Range(0, droppedItem.Length);
+                    GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().addItem(droppedItem[Probabilidad]);
+                }
+            }
+
+            //Eliminar objeto
             Destroy(gameObject);
         }
     }
