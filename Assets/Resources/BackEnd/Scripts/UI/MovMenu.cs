@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class MovMenu : MonoBehaviour
 {
-    
+
     private Transform PlayerTransform;
     private float MoveX, MoveY;
     public Animator animator;
     public float SpeedMove = 1f;
-
-
+    public GameObject Panel;
+    public bool Stop = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,9 +18,10 @@ public class MovMenu : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-  private void Update()
+    private void Update()
     {
-
+        if (!Panel.gameObject.activeSelf && !Stop)
+        {
             MoveX = Input.GetAxis("Horizontal") * SpeedMove * Time.deltaTime;
             MoveY = Input.GetAxis("Vertical") * SpeedMove * Time.deltaTime;
             GetComponent<CapsuleCollider2D>().enabled = true;
@@ -38,7 +39,11 @@ public class MovMenu : MonoBehaviour
 
             Vector2 newPosition = PlayerTransform.position + new Vector3(MoveX, MoveY, 0);
             PlayerTransform.position = newPosition;
-        
-    }
+        }
+        else
+        {
+            animator.SetBool("inMove", false);
+        }
 
+    }
 }

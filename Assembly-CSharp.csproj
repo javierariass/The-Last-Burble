@@ -58,6 +58,7 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Resources\BackEnd\Scripts\UI\BurbleDialog.cs" />
     <Compile Include="Assets\Resources\BackEnd\Scripts\Core\Items\GrandmaPotionItem.cs" />
     <Compile Include="Assets\Resources\BackEnd\Scripts\Core\Players\Enemy.cs" />
     <Compile Include="Assets\Resources\BackEnd\Scripts\UI\SceneEnemyTransition.cs" />
@@ -66,6 +67,7 @@
     <Compile Include="Assets\Resources\BackEnd\Scripts\Core\Players\EnemyShoot.cs" />
     <Compile Include="Assets\Resources\FrontEnd\dialog\dialogScript.cs" />
     <Compile Include="Assets\Resources\BackEnd\Scripts\Core\Players\Boss_Greed.cs" />
+    <Compile Include="Assets\Resources\BackEnd\Scripts\UI\MovMenu.cs" />
     <Compile Include="Assets\Resources\BackEnd\Scripts\Core\SliderController.cs" />
     <Compile Include="Assets\Resources\BackEnd\Scripts\UI\Inventory.cs" />
     <Compile Include="Assets\Resources\BackEnd\Scripts\Core\Players\PlayerCorePerson.cs" />
@@ -81,6 +83,9 @@
     <Compile Include="Assets\Resources\BackEnd\Scripts\Core\Items\AtackTwiceItem.cs" />
     <Compile Include="Assets\Resources\BackEnd\Scripts\Core\EnemySpawnerController.cs" />
     <Compile Include="Assets\Resources\BackEnd\Scripts\Core\Players\SpawnerShoot.cs" />
+    <Compile Include="Assets\Resources\BackEnd\Scripts\UI\PortalStart.cs" />
+    <Compile Include="Assets\Resources\BackEnd\Scripts\UI\PortalPanel.cs" />
+    <Compile Include="Assets\Resources\BackEnd\Scripts\UI\EarthTransition.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

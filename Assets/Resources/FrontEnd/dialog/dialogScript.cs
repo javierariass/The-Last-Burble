@@ -11,6 +11,8 @@ public class dialogScript : MonoBehaviour
 
     public float textSpeed = 0.1f;
 
+    public Animator animator;
+
     int index;
 
 
@@ -58,6 +60,7 @@ public class dialogScript : MonoBehaviour
             StartCoroutine(writeLine());
         }
         else{
+            animator.SetTrigger("Traslade");
             gameObject.SetActive(false);        
         }
     }
