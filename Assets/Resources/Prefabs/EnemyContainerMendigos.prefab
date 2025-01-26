@@ -32,7 +32,7 @@ Transform:
   - {fileID: 582514445016087978}
   - {fileID: 582514445580357650}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &582514445016087979
 GameObject:
@@ -236,8 +236,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52eb15d871c98e746b52290279b452f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Mendigos
+  Name: 
   Life: 5
+  LifeMax: 0
   expDropped: 2
   DamageMin: 2
   DamageMax: 3
@@ -245,6 +246,14 @@ MonoBehaviour:
   PointRutine:
   - {fileID: 582514445915178639}
   - {fileID: 582514445016087979}
+  droppedItem: []
+  Person: {fileID: 0}
+  cameraVirtual: {fileID: 0}
+  Camera: {fileID: 0}
+  particlePrefab: {fileID: 0}
+  confiner: {fileID: 0}
+  attackDuration: 5
+  uiUser: {fileID: 0}
 --- !u!50 &582514445580357660
 Rigidbody2D:
   serializedVersion: 4
@@ -279,9 +288,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.005847474, y: -0.03313577}
   serializedVersion: 2
-  m_Radius: 0.4
+  m_Radius: 0.18559243
 --- !u!1 &582514445652344292
 GameObject:
   m_ObjectHideFlags: 0
