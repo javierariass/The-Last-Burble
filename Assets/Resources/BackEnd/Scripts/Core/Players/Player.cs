@@ -41,7 +41,7 @@ public class Player : MonoBehaviour
 
     //Sonidos
     private AudioSource Audio;
-    public AudioClip Steps, TakeDamage, LevelUp, Health;
+    public AudioClip Steps, TakeDamage, LevelUp, Health,Death;
     private bool reproducing = false;
 
     private void Start()
@@ -199,6 +199,9 @@ public class Player : MonoBehaviour
 
     public void desLevelUp()
     {
+        Audio.clip = Death;
+        Audio.loop = false;
+        Audio.Play();
         if(Level >1)
         {
             Level--;

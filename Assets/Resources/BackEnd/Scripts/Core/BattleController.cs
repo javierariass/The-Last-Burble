@@ -22,6 +22,11 @@ public class BattleController : MonoBehaviour
     public bool TutorialComplete = false;
     private int PasoTutorial = 0;
     public GameObject[] CombatTutorial;
+    public Sounds Audios;
+    public AudioSource audioSource;
+    public ExitCombat UIexitCombat;
+    public bool EnTexto = false;
+
     public void atacking(int damage)
     {
         int atack = 0;
@@ -91,6 +96,12 @@ public class BattleController : MonoBehaviour
             enemy = null;
             Counterlife--;
             uiUser.SetActive(true);
+            audioSource.clip = Audios.SoundStage;
+            audioSource.Play();
+            UIexitCombat.Life = Counterlife.ToString();
+            UIexitCombat.GeneratePerdidas();
+            
+            
         }
         else SceneManager.LoadScene(0);
     }
@@ -180,7 +191,7 @@ public class BattleController : MonoBehaviour
         Person.SetActive(false);
         inDefense = false;
         if(TutorialComplete) InitBatle();
-        else if(PasoTutorial == 3)
+        else if(PasoTutorial == 3 && InBatle)
         {
             TutorialComplete = true;
             CombatTutorial[3].SetActive(true);

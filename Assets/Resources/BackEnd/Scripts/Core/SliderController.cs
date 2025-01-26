@@ -9,6 +9,7 @@ public class SliderController : MonoBehaviour
     public Slider hitBar; // Asigna el Slider desde el Inspector
     public float duration = 5f; // Duración para ir de 0 a 100 y de 100 a 0
     private bool increasing = true; // Controla la dirección del slider
+    public BattleController Bc;
 
     void Start()
     {
@@ -47,7 +48,7 @@ public class SliderController : MonoBehaviour
     void Update()
     {
         // Al pulsar la barra espaciadora, devuelve el valor actual
-        if (Input.GetKeyDown(KeyCode.Space) && GetComponent<BattleController>().CombatEnabled)
+        if (Input.GetKeyDown(KeyCode.Space) && Bc.CombatEnabled && ! Bc.EnTexto)
         {
             float result = hitBar.value;
             int resultInt = (int)result;

@@ -31,7 +31,7 @@ public class dialogScript : MonoBehaviour
         dialogText.text = string.Empty;
         startDialog();
         Audio = GetComponent<AudioSource>();
-        
+        GameObject.FindGameObjectWithTag("BattleController").GetComponent<BattleController>().EnTexto = true;
     }
 
 
@@ -39,19 +39,20 @@ public class dialogScript : MonoBehaviour
     {
         if(Input.GetMouseButtonDown(0)){
             if(dialogText.text == lines[index]){
+                Audio.Play();
                 nextLine();
             }
             else{
                 StopAllCoroutines();
                 dialogText.text = lines[index];
-            }
-
+            }            
         }
+        
     }
 
     public void startDialog(){
         index = 0;
-           
+        Audio.Play();
         StartCoroutine(writeLine());
 
     } 
@@ -62,12 +63,13 @@ public class dialogScript : MonoBehaviour
             dialogText.text += letter;             
             yield return new WaitForSeconds(textSpeed);
         }
+        Audio.Stop();
     }
 
     public void nextLine(){
         if(index < lines.Length - 1){
             index++;
-            dialogText.text = string.Empty;
+            dialogText.text = string.Empty;            
             StartCoroutine(writeLine());
         }
         else{
@@ -76,8 +78,10 @@ public class dialogScript : MonoBehaviour
             if (bc != null && !EndTutorial) bc.StartCoroutine(bc.Defense());
             if (EndTutorial) bc.InitBatle();
             if (collider != null) collider.size = new Vector2(3f, 3f);
+            if (player != null) player.inCinematic = false;
+            GameObject.FindGameObjectWithTag("BattleController").GetComponent<BattleController>().EnTexto = false;
             gameObject.SetActive(false);
-            if (player != null) player.inCinematic = false;           
+                  
         }
     }
 }
