@@ -20,6 +20,7 @@ public class Enemy : MonoBehaviour
     public GameObject Person;
     public CinemachineVirtualCamera cameraVirtual;
     public GameObject Camera;
+    public GameObject particlePrefab;
     public PolygonCollider2D confiner;
     private BattleController Bc;
     public int attackDuration = 5;
@@ -88,9 +89,11 @@ public class Enemy : MonoBehaviour
                     GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().addItem(droppedItem[Probabilidad]);
                 }
             }
-
+            
             //Eliminar objeto
             Destroy(gameObject);
+            GameObject player = GameObject.FindWithTag("Player");
+            Instantiate(particlePrefab, player.transform.position, Quaternion.identity);
         }
     }
 
@@ -112,4 +115,6 @@ public class Enemy : MonoBehaviour
         cameraVirtual.GetComponent<CinemachineConfiner>().InvalidatePathCache();
         Bc.InitBatle();
     }
+
+
 }
