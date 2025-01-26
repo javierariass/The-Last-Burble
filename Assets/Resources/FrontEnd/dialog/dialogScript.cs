@@ -24,11 +24,13 @@ public class dialogScript : MonoBehaviour
     public bool EndTutorial = false;
 
     public BoxCollider2D collider;
-
+    private AudioSource Audio;
     void Start()
     {
         dialogText.text = string.Empty;
         startDialog();
+        Audio = GetComponent<AudioSource>();
+        
     }
 
 
@@ -56,7 +58,8 @@ public class dialogScript : MonoBehaviour
     IEnumerator writeLine(){
 
         foreach (char letter in lines[index].ToCharArray()){
-            dialogText.text += letter;
+            dialogText.text += letter;        
+            //Audio.Play();
             yield return new WaitForSeconds(textSpeed);
         }
 

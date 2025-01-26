@@ -1,0 +1,893 @@
+fileFormatVersion: 2
+guid: d06be83e0d79b3a4f8700c5a47a5f0d5
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: texto inicio menuu_0
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 439
+        width: 432
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3235e166ffc8ace4caeeecbcbaa92f92
+      internalID: 1590105295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: texto inicio menuu_1
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 338
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4188c428979b834f9b6b5564b9afb3f
+      internalID: -1658837490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: texto inicio menuu_2
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 338
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 259555c60fbd7ba43a9056180b8151fb
+      internalID: 1189729997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: texto inicio menuu_3
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 338
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c8e17a16b57abc48bcc5c1de554f4f4
+      internalID: 523908941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: texto inicio menuu_4
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 338
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfde98f27c1ef4a44af7dcf45a65c5c4
+      internalID: -1134600279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: texto inicio menuu_5
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 338
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e51b4dc21b2cf6428b4c5ae32da8561
+      internalID: -358453624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: texto inicio menuu_6
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 338
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ae207ee3032a514192e7b4848c36410
+      internalID: -420203972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: texto inicio menuu_7
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 338
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 959c4e2b1310e4b459bdab8a5d8cda6b
+      internalID: -689873880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: texto inicio menuu_8
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 338
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc1e7881d5302d94ca09c54e3691e34e
+      internalID: -1657733375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: texto inicio menuu_9
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 338
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43180aaa02050ee4aa4f518e1e4391d2
+      internalID: 1473220455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: texto inicio menuu_10
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 338
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ead813c89dc61004fb0ba0b9dc839d57
+      internalID: 1149170433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: texto inicio menuu_11
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 336
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f41b2e22a44cda04d84da3c4ce7549e7
+      internalID: 765361972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: texto inicio menuu_12
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 338
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 870c9ea0f05e789449dd2b01991914c5
+      internalID: 2079572266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: texto inicio menuu_13
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 338
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3d1bdc2631a68a4794a926d0996f150
+      internalID: -613742258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: texto inicio menuu_14
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 338
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7708fcf4e03f0c48a5a75cf09841a33
+      internalID: -1044529573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: texto inicio menuu_15
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 332
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76e10916b25be464da5971802e2180b6
+      internalID: 594274491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: texto inicio menuu_16
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 290
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26b3ea2e5733c8d4fa422f52e7cf5a34
+      internalID: -172555006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: texto inicio menuu_17
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 290
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaa632b2f2eecac49a64dd35bad59e3a
+      internalID: -1067709781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: texto inicio menuu_18
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 290
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7111d55cd6329e4787320d667e51643
+      internalID: -1211421049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: texto inicio menuu_19
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 290
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 094879d3cb176fa4fb7aba039604b1b2
+      internalID: -669849714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: texto inicio menuu_20
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 290
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1acd4fd8b3924eb4694d43a1af54fa64
+      internalID: 11164050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: texto inicio menuu_21
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 290
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dfb4a186240aa547b56132b253670eb
+      internalID: 1129743035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: texto inicio menuu_22
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 290
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1583ba484ccd7248951d1f03b0ec0d6
+      internalID: 696337905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: texto inicio menuu_23
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 290
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aff823cd364365145b95224ea910ab9c
+      internalID: -434573806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: texto inicio menuu_24
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 290
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a09f5644f5c8cf449a976467478729d
+      internalID: -973498525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: texto inicio menuu_25
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 290
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd0ee99c00bca6c4fa14e174ee9fc6ed
+      internalID: 1223863065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: texto inicio menuu_26
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 290
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31136a3e6736a0e49b74c2e54929897b
+      internalID: -1474253008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: texto inicio menuu_27
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 290
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f3c91f1d576f4945beb9c4b646a3387
+      internalID: -946352755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: texto inicio menuu_28
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 290
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8a25ef90412c8e49aacf09378ab4362
+      internalID: 1222833227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: texto inicio menuu_29
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 290
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f6edb457b03ba646b7d4423319f44a0
+      internalID: 809374128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: texto inicio menuu_30
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 290
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e689bd5cb944e8c4496db6037f5cef50
+      internalID: 847916270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: texto inicio menuu_31
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 290
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7552ec29a1484db4aa123d45e6ab77c3
+      internalID: -600873275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: texto inicio menuu_32
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 290
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 680df8c0daa56794ca02daa450df7a5e
+      internalID: 535398826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: texto inicio menuu_33
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 108
+        width: 432
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be430f31be4605445b592712aa18de0e
+      internalID: -862395609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: texto inicio menuu_34
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 271
+        width: 668
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 54, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 077293b748167ab40bbd4c67b1f80c63
+      internalID: 1859086879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      texto inicio menuu_1: -1658837490
+      texto inicio menuu_18: -1211421049
+      texto inicio menuu_23: -434573806
+      texto inicio menuu_28: 1222833227
+      texto inicio menuu_24: -973498525
+      texto inicio menuu_8: -1657733375
+      texto inicio menuu_0: 1590105295
+      texto inicio menuu_16: -172555006
+      texto inicio menuu_20: 11164050
+      texto inicio menuu_4: -1134600279
+      texto inicio menuu_31: -600873275
+      texto inicio menuu_10: 1149170433
+      texto inicio menuu_15: 594274491
+      texto inicio menuu_2: 1189729997
+      texto inicio menuu_3: 523908941
+      texto inicio menuu_5: -358453624
+      texto inicio menuu_26: -1474253008
+      texto inicio menuu_12: 2079572266
+      texto inicio menuu_21: 1129743035
+      texto inicio menuu_17: -1067709781
+      texto inicio menuu_19: -669849714
+      texto inicio menuu_32: 535398826
+      texto inicio menuu_7: -689873880
+      texto inicio menuu_22: 696337905
+      texto inicio menuu_29: 809374128
+      texto inicio menuu_9: 1473220455
+      texto inicio menuu_13: -613742258
+      texto inicio menuu_27: -946352755
+      texto inicio menuu_11: 765361972
+      texto inicio menuu_30: 847916270
+      texto inicio menuu_33: -862395609
+      texto inicio menuu_14: -1044529573
+      texto inicio menuu_6: -420203972
+      texto inicio menuu_34: 1859086879
+      texto inicio menuu_25: 1223863065
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

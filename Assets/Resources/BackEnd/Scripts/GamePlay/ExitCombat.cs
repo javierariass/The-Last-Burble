@@ -11,9 +11,11 @@ public class ExitCombat : MonoBehaviour
     public TextMeshProUGUI Experiencia, Dropeado;
     public GameObject particlePrefab;
     public Vector3 Pos;
+    public AudioSource Audio;
 
     public void GenerateDatos()
     {
+        Audio.Play();
         transform.localScale = Vector3.one;
         Dropeado.text = Droped != null ? "Item dropeado: " + Droped.GetComponent<Item>().name : "";
         Experiencia.text = "Burbujas obtenidas: " + enemy.expDropped;

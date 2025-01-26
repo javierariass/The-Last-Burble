@@ -38,6 +38,12 @@ public class Player : MonoBehaviour
     public bool isLive;
     public GameObject PanelCombat;
 
+
+    //Sonidos
+    private AudioSource Audio;
+    public AudioClip Steps, TakeDamage, LevelUp, Health;
+    private bool reproducing = false;
+
     private void Start()
     {
         PlayerTransform = GetComponent<Transform>();
@@ -45,6 +51,7 @@ public class Player : MonoBehaviour
         Life = LifeMax;
         inCinematic = false;
         isLive = true;
+        Audio = GetComponent<AudioSource>();
     }
 
     //Movement
@@ -57,9 +64,27 @@ public class Player : MonoBehaviour
             GetComponent<CapsuleCollider2D>().enabled = true;
 
             if (MoveY != 0 || MoveX != 0)
+            {
                 animator.SetBool("inMove", true);
+                Audio.clip = Steps;
+                if (!reproducing)
+                {
+                    Audio.Play();
+                    Audio.loop = true;
+                    reproducing = true;
+                }
+            }
+                
             else
+            {
                 animator.SetBool("inMove", false);
+                if (reproducing)
+                {
+                    reproducing = false;
+                    Audio.Stop();
+                }
+            }
+                
 
 
             if (MoveX < 0)
@@ -84,6 +109,9 @@ public class Player : MonoBehaviour
     //Recovery Health
     public void recoveryHealth(int recovery)
     {
+        Audio.loop = false;
+        Audio.clip = Health;
+        Audio.Play();
         if (Life + recovery >= LifeMax)
             Life = LifeMax;  
         else
@@ -93,7 +121,7 @@ public class Player : MonoBehaviour
 
     //Update Health
     public void updateHealth(int health)
-    {
+    {      
         LifeMax += health;
         Life += health;
     }
@@ -102,6 +130,9 @@ public class Player : MonoBehaviour
     //Take Damage
     public void takeDamage(int damage)
     {
+        Audio.loop = false;
+        Audio.clip = TakeDamage;
+        Audio.Play();
         bool isLive = true;
         if (damage >= Life)
         {
@@ -150,6 +181,9 @@ public class Player : MonoBehaviour
 
     public void levelUp()
     {
+        Audio.clip = LevelUp;
+        Audio.loop = false;
+        Audio.Play();
         Level++;
         damage++;
         LifeMax += 5;

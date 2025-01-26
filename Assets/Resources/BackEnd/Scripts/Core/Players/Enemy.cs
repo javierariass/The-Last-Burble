@@ -26,7 +26,8 @@ public class Enemy : MonoBehaviour
     public int attackDuration = 5;
     public GameObject uiUser;
     private ExitCombat HistCombat;
-
+    private AudioSource Audio;
+    private Sounds sounds;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,6 +40,9 @@ public class Enemy : MonoBehaviour
         Life = LifeMax;
         uiUser = GameObject.FindGameObjectWithTag("uiUser");
         HistCombat = GameObject.FindGameObjectWithTag("InfoCombat").GetComponent<ExitCombat>();
+        gameObject.AddComponent<AudioSource>();
+        Audio = GetComponent<AudioSource>();
+        sounds = GameObject.FindGameObjectWithTag("MusicManager").GetComponent<Sounds>();
     }
 
 
@@ -64,13 +68,17 @@ public class Enemy : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             Debug.Log("Start Battle");
-
+            collision.gameObject.GetComponent<Player>().animator.SetBool("inMove", false);
+            collision.gameObject.GetComponent<AudioSource>().Stop();
             StartBattle(collision.gameObject.GetComponent<Player>());
         }
     }
 
     public void restarLife(int restar)
     {
+        Audio.clip = sounds.EnemytakeDamage;
+        Audio.loop = false;
+        Audio.Play();
         Life -= restar;
         if (Life <= 0)
         {
@@ -78,6 +86,8 @@ public class Enemy : MonoBehaviour
             cameraVirtual.Follow = GameObject.FindGameObjectWithTag("Player").transform;
             cameraVirtual.GetComponent<CinemachineConfiner>().m_BoundingShape2D = GameObject.FindGameObjectWithTag("StageConfiner").GetComponent<PolygonCollider2D>();
             cameraVirtual.GetComponent<CinemachineConfiner>().InvalidatePathCache();
+            sounds.Audio.clip = sounds.SoundStage;
+            sounds.Audio.Play();
             GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().inCinematic = false;
             Bc.Combat.SetActive(false);
             GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().takeExperience(expDropped);
@@ -111,6 +121,10 @@ public class Enemy : MonoBehaviour
     //Combat function
     private void StartBattle(Player player)
     {
+
+        if (gameObject.CompareTag("Greed")) sounds.Audio.clip = sounds.Boss;
+        else sounds.Audio.clip = sounds.Battle;
+        sounds.Audio.Play();
         player.PanelCombat.SetActive(true);
         Person.GetComponent<PlayerCorePerson>().player.inCinematic = true;
         Bc.enemy = gameObject.GetComponent<Enemy>();

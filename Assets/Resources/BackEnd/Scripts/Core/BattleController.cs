@@ -167,6 +167,7 @@ public class BattleController : MonoBehaviour
         CombatTutorial[0].GetComponent<dialogScript>().CombatAction = CombatSystem;
         CombatTutorial[0].SetActive(true);
         PasoTutorial++;
+        EnemyName.text = enemy.Name;
     }
     public IEnumerator Defense()
     {

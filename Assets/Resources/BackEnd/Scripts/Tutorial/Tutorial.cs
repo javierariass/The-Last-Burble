@@ -19,6 +19,8 @@ public class Tutorial : MonoBehaviour
             Instruction.GetComponent<dialogScript>().player = player;
             Instruction.SetActive(true);
             GetComponent<BoxCollider2D>().enabled = false;
+            player.GetComponent<AudioSource>().Stop();
+            player.animator.SetBool("inMove", false);
         }
     }
 }
