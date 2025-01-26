@@ -7,7 +7,9 @@ public class Stats : MonoBehaviour
 {
     private Player player;
     public TextMeshProUGUI Life, Exp, AttackVel, DefVel, MoveVel;
-    private bool Active = false;
+    public bool Active = false;
+    public GameObject Panel;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,6 +37,8 @@ public class Stats : MonoBehaviour
             {
                 transform.localScale = Vector3.one;
                 Active = true;
+                Panel.transform.localScale = Vector3.zero;
+                Panel.GetComponent<Inventory>().Active = false;
             }
         }
     }
