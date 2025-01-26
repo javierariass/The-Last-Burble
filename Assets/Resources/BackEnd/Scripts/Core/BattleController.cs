@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class BattleController : MonoBehaviour
 {
     public bool inDefense = false;
-    public GameObject CombatSystem,DefenseZone,Combat,Person,SliderHit,SpawnObject;
+    public GameObject CombatSystem,DefenseZone,Combat,Person,SliderHit,SpawnObject,ButtonBack;
     public GameObject[] SpawnPoint;
     public Enemy enemy;
     public SpriteRenderer Enemy;
@@ -17,6 +17,7 @@ public class BattleController : MonoBehaviour
     public bool CombatEnabled = false;
     public TextMeshProUGUI EnemyName, PlayerLife, EnemyLife;
     private int Counterlife;
+    public Transform Inventory;
 
     public void atacking(int damage)
     {
@@ -104,6 +105,20 @@ public class BattleController : MonoBehaviour
         }
     }
 
+    //Inventary
+    public void InitInventory()
+    {
+        CombatSystem.SetActive(false);
+        Inventory.localScale = Vector3.one;
+        ButtonBack.SetActive(true);
+    }
+
+    public void Back()
+    {
+        CombatSystem.SetActive(true);
+        Inventory.localScale = Vector3.zero;
+        ButtonBack.SetActive(false);
+    }
     private void UpdateLifes()
     {
         PlayerLife.text = "Vida: " + player.Life.ToString() + "/" + player.LifeMax.ToString();

@@ -2,14 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using static UnityEngine.Rendering.DebugUI;
 
 public class Inventory : MonoBehaviour
 {
     public Casilla casillaSelected;
     public TextMeshProUGUI Description;
     private Player player;
-    private bool Active = false;
-
+    public bool Active = false;
+    public BattleController Bc;
+    public GameObject Panel;
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
@@ -32,13 +34,16 @@ public class Inventory : MonoBehaviour
             else
             {
                 transform.localScale = Vector3.one;
+                Panel.transform.localScale = Vector3.zero;
+                Panel.GetComponent<Stats>().Active = false;
                 Active = true;
             }
         }
+
     }
     public void Use()
     {
-        if(casillaSelected.Item != null)
+        if(casillaSelected != null && casillaSelected.Item != null)
         {
             casillaSelected.Cantidad--;
             //Usar item
@@ -51,7 +56,14 @@ public class Inventory : MonoBehaviour
                 casillaSelected.Text.text = "";
                 casillaSelected.Sprite.sprite = casillaSelected.defaultSprite;
             }
+            casillaSelected = null;
+            transform.localScale = Vector3.zero;
+            if (player.inCinematic)
+            {
+                transform.localScale = Vector3.zero;
+                Bc.InitDefense();
+            }
         }
-        casillaSelected = null;
+        
     }
 }
