@@ -24,6 +24,7 @@ public class Enemy : MonoBehaviour
     public PolygonCollider2D confiner;
     private BattleController Bc;
     public int attackDuration = 5;
+    public GameObject uiUser;
 
 
     // Start is called before the first frame update
@@ -36,6 +37,7 @@ public class Enemy : MonoBehaviour
         confiner = GameObject.FindGameObjectWithTag("ConfinerBattle").GetComponent<PolygonCollider2D>();
         Bc = GameObject.FindGameObjectWithTag("BattleController").GetComponent<BattleController>();
         Life = LifeMax;
+        uiUser = GameObject.FindGameObjectWithTag("uiUser");
     }
 
 
@@ -89,8 +91,9 @@ public class Enemy : MonoBehaviour
                     GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().addItem(droppedItem[Probabilidad]);
                 }
             }
-            
+
             //Eliminar objeto
+            uiUser.SetActive(true);
             Destroy(gameObject);
             GameObject player = GameObject.FindWithTag("Player");
             Instantiate(particlePrefab, player.transform.position, Quaternion.identity);
@@ -103,7 +106,8 @@ public class Enemy : MonoBehaviour
     {       
         player.PanelCombat.SetActive(true);
         Person.GetComponent<PlayerCorePerson>().player.inCinematic = true;
-        Bc.enemy = gameObject.GetComponent<Enemy>();    
+        Bc.enemy = gameObject.GetComponent<Enemy>();
+        uiUser.SetActive(false);
         
     }
 
