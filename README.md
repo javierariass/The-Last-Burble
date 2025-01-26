@@ -1,2 +1,6 @@
-Angel Union
-Manuel Montero
+# GlobalGameJam 2025 
+## Desarrolladores :man_technologist::
+- Angel Hernándes Alonso 
+- Andy Clemente Gago
+- Javier Arias Sotolongo
+- Manuel David Montero Crespo
