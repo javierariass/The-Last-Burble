@@ -3,15 +3,27 @@
   "WorkspaceRootPath": "C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A3D02EB2-6652-9DF6-E415-EFB00DE58184}|Assembly-CSharp.csproj|c:\\users\\javier\\documents\\programacion\\the last burble\\assets\\resources\\backend\\scripts\\ui\\exitmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3D02EB2-6652-9DF6-E415-EFB00DE58184}|Assembly-CSharp.csproj|solutionrelative:assets\\resources\\backend\\scripts\\ui\\exitmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3D02EB2-6652-9DF6-E415-EFB00DE58184}|Assembly-CSharp.csproj|c:\\users\\javier\\documents\\programacion\\the last burble\\assets\\resources\\backend\\scripts\\ui\\burbledialog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3D02EB2-6652-9DF6-E415-EFB00DE58184}|Assembly-CSharp.csproj|solutionrelative:assets\\resources\\backend\\scripts\\ui\\burbledialog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3D02EB2-6652-9DF6-E415-EFB00DE58184}|Assembly-CSharp.csproj|C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\assets\\resources\\backend\\scripts\\ui\\buttonmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3D02EB2-6652-9DF6-E415-EFB00DE58184}|Assembly-CSharp.csproj|solutionrelative:assets\\resources\\backend\\scripts\\ui\\buttonmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A3D02EB2-6652-9DF6-E415-EFB00DE58184}|Assembly-CSharp.csproj|C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\assets\\resources\\backend\\scripts\\ui\\portalpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A3D02EB2-6652-9DF6-E415-EFB00DE58184}|Assembly-CSharp.csproj|solutionrelative:assets\\resources\\backend\\scripts\\ui\\portalpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A3D02EB2-6652-9DF6-E415-EFB00DE58184}|Assembly-CSharp.csproj|c:\\users\\javier\\documents\\programacion\\the last burble\\assets\\resources\\backend\\scripts\\ui\\portalstart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A3D02EB2-6652-9DF6-E415-EFB00DE58184}|Assembly-CSharp.csproj|C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\assets\\resources\\backend\\scripts\\ui\\portalstart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A3D02EB2-6652-9DF6-E415-EFB00DE58184}|Assembly-CSharp.csproj|solutionrelative:assets\\resources\\backend\\scripts\\ui\\portalstart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A3D02EB2-6652-9DF6-E415-EFB00DE58184}|Assembly-CSharp.csproj|c:\\users\\javier\\documents\\programacion\\the last burble\\assets\\resources\\backend\\scripts\\ui\\earthtransition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A3D02EB2-6652-9DF6-E415-EFB00DE58184}|Assembly-CSharp.csproj|C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\assets\\resources\\backend\\scripts\\ui\\earthtransition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A3D02EB2-6652-9DF6-E415-EFB00DE58184}|Assembly-CSharp.csproj|solutionrelative:assets\\resources\\backend\\scripts\\ui\\earthtransition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -19,44 +31,8 @@
       "RelativeMoniker": "D:0:0:{A3D02EB2-6652-9DF6-E415-EFB00DE58184}|Assembly-CSharp.csproj|solutionrelative:assets\\resources\\backend\\scripts\\ui\\movmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A3D02EB2-6652-9DF6-E415-EFB00DE58184}|Assembly-CSharp.csproj|C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\assets\\resources\\backend\\scripts\\ui\\burbledialog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3D02EB2-6652-9DF6-E415-EFB00DE58184}|Assembly-CSharp.csproj|solutionrelative:assets\\resources\\backend\\scripts\\ui\\burbledialog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A3D02EB2-6652-9DF6-E415-EFB00DE58184}|Assembly-CSharp.csproj|C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\assets\\resources\\frontend\\dialog\\dialogscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A3D02EB2-6652-9DF6-E415-EFB00DE58184}|Assembly-CSharp.csproj|solutionrelative:assets\\resources\\frontend\\dialog\\dialogscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3D02EB2-6652-9DF6-E415-EFB00DE58184}|Assembly-CSharp.csproj|C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\assets\\resources\\backend\\scripts\\core\\battlecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3D02EB2-6652-9DF6-E415-EFB00DE58184}|Assembly-CSharp.csproj|solutionrelative:assets\\resources\\backend\\scripts\\core\\battlecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3D02EB2-6652-9DF6-E415-EFB00DE58184}|Assembly-CSharp.csproj|C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\assets\\resources\\backend\\scripts\\ui\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3D02EB2-6652-9DF6-E415-EFB00DE58184}|Assembly-CSharp.csproj|solutionrelative:assets\\resources\\backend\\scripts\\ui\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3D02EB2-6652-9DF6-E415-EFB00DE58184}|Assembly-CSharp.csproj|C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\assets\\resources\\backend\\scripts\\ui\\stats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3D02EB2-6652-9DF6-E415-EFB00DE58184}|Assembly-CSharp.csproj|solutionrelative:assets\\resources\\backend\\scripts\\ui\\stats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3D02EB2-6652-9DF6-E415-EFB00DE58184}|Assembly-CSharp.csproj|C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\assets\\resources\\backend\\scripts\\core\\players\\boss_greed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3D02EB2-6652-9DF6-E415-EFB00DE58184}|Assembly-CSharp.csproj|solutionrelative:assets\\resources\\backend\\scripts\\core\\players\\boss_greed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3D02EB2-6652-9DF6-E415-EFB00DE58184}|Assembly-CSharp.csproj|C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\assets\\resources\\backend\\scripts\\core\\players\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3D02EB2-6652-9DF6-E415-EFB00DE58184}|Assembly-CSharp.csproj|solutionrelative:assets\\resources\\backend\\scripts\\core\\players\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3D02EB2-6652-9DF6-E415-EFB00DE58184}|Assembly-CSharp.csproj|C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\assets\\resources\\backend\\scripts\\core\\players\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3D02EB2-6652-9DF6-E415-EFB00DE58184}|Assembly-CSharp.csproj|solutionrelative:assets\\resources\\backend\\scripts\\core\\players\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3D02EB2-6652-9DF6-E415-EFB00DE58184}|Assembly-CSharp.csproj|C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\assets\\resources\\backend\\scripts\\core\\slidercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3D02EB2-6652-9DF6-E415-EFB00DE58184}|Assembly-CSharp.csproj|solutionrelative:assets\\resources\\backend\\scripts\\core\\slidercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3D02EB2-6652-9DF6-E415-EFB00DE58184}|Assembly-CSharp.csproj|C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\assets\\resources\\backend\\scripts\\ui\\casilla.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3D02EB2-6652-9DF6-E415-EFB00DE58184}|Assembly-CSharp.csproj|solutionrelative:assets\\resources\\backend\\scripts\\ui\\casilla.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,11 +42,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ExitMenu.cs",
+              "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\Assets\\Resources\\BackEnd\\Scripts\\UI\\ExitMenu.cs",
+              "RelativeDocumentMoniker": "Assets\\Resources\\BackEnd\\Scripts\\UI\\ExitMenu.cs",
+              "ToolTip": "C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\Assets\\Resources\\BackEnd\\Scripts\\UI\\ExitMenu.cs",
+              "RelativeToolTip": "Assets\\Resources\\BackEnd\\Scripts\\UI\\ExitMenu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-26T08:21:12.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "ButtonMenu.cs",
+              "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\Assets\\Resources\\BackEnd\\Scripts\\UI\\ButtonMenu.cs",
+              "RelativeDocumentMoniker": "Assets\\Resources\\BackEnd\\Scripts\\UI\\ButtonMenu.cs",
+              "ToolTip": "C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\Assets\\Resources\\BackEnd\\Scripts\\UI\\ButtonMenu.cs",
+              "RelativeToolTip": "Assets\\Resources\\BackEnd\\Scripts\\UI\\ButtonMenu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-26T08:14:17.654Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "EarthTransition.cs",
               "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\Assets\\Resources\\BackEnd\\Scripts\\UI\\EarthTransition.cs",
               "RelativeDocumentMoniker": "Assets\\Resources\\BackEnd\\Scripts\\UI\\EarthTransition.cs",
@@ -78,12 +79,11 @@
               "RelativeToolTip": "Assets\\Resources\\BackEnd\\Scripts\\UI\\EarthTransition.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-26T07:27:42.825Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-26T07:27:42.825Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "PortalPanel.cs",
               "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\Assets\\Resources\\BackEnd\\Scripts\\UI\\PortalPanel.cs",
               "RelativeDocumentMoniker": "Assets\\Resources\\BackEnd\\Scripts\\UI\\PortalPanel.cs",
@@ -91,12 +91,11 @@
               "RelativeToolTip": "Assets\\Resources\\BackEnd\\Scripts\\UI\\PortalPanel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-26T07:15:06.642Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-26T07:15:06.642Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "PortalStart.cs",
               "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\Assets\\Resources\\BackEnd\\Scripts\\UI\\PortalStart.cs",
               "RelativeDocumentMoniker": "Assets\\Resources\\BackEnd\\Scripts\\UI\\PortalStart.cs",
@@ -104,12 +103,11 @@
               "RelativeToolTip": "Assets\\Resources\\BackEnd\\Scripts\\UI\\PortalStart.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-26T06:45:40.952Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-26T06:45:40.952Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "MovMenu.cs",
               "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\Assets\\Resources\\BackEnd\\Scripts\\UI\\MovMenu.cs",
               "RelativeDocumentMoniker": "Assets\\Resources\\BackEnd\\Scripts\\UI\\MovMenu.cs",
@@ -121,7 +119,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "dialogScript.cs",
               "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\Assets\\Resources\\FrontEnd\\dialog\\dialogScript.cs",
               "RelativeDocumentMoniker": "Assets\\Resources\\FrontEnd\\dialog\\dialogScript.cs",
@@ -133,111 +131,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "BurbleDialog.cs",
               "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\Assets\\Resources\\BackEnd\\Scripts\\UI\\BurbleDialog.cs",
               "RelativeDocumentMoniker": "Assets\\Resources\\BackEnd\\Scripts\\UI\\BurbleDialog.cs",
               "ToolTip": "C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\Assets\\Resources\\BackEnd\\Scripts\\UI\\BurbleDialog.cs",
               "RelativeToolTip": "Assets\\Resources\\BackEnd\\Scripts\\UI\\BurbleDialog.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-26T06:31:10.39Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Boss_Greed.cs",
-              "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\Assets\\Resources\\BackEnd\\Scripts\\Core\\Players\\Boss_Greed.cs",
-              "RelativeDocumentMoniker": "Assets\\Resources\\BackEnd\\Scripts\\Core\\Players\\Boss_Greed.cs",
-              "ToolTip": "C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\Assets\\Resources\\BackEnd\\Scripts\\Core\\Players\\Boss_Greed.cs",
-              "RelativeToolTip": "Assets\\Resources\\BackEnd\\Scripts\\Core\\Players\\Boss_Greed.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-26T04:31:34.771Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Player.cs",
-              "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\Assets\\Resources\\BackEnd\\Scripts\\Core\\Players\\Player.cs",
-              "RelativeDocumentMoniker": "Assets\\Resources\\BackEnd\\Scripts\\Core\\Players\\Player.cs",
-              "ToolTip": "C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\Assets\\Resources\\BackEnd\\Scripts\\Core\\Players\\Player.cs",
-              "RelativeToolTip": "Assets\\Resources\\BackEnd\\Scripts\\Core\\Players\\Player.cs",
-              "ViewState": "AgIAAJcAAAAAAAAAAAA8wMMAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-26T03:28:36.138Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Stats.cs",
-              "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\Assets\\Resources\\BackEnd\\Scripts\\UI\\Stats.cs",
-              "RelativeDocumentMoniker": "Assets\\Resources\\BackEnd\\Scripts\\UI\\Stats.cs",
-              "ToolTip": "C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\Assets\\Resources\\BackEnd\\Scripts\\UI\\Stats.cs",
-              "RelativeToolTip": "Assets\\Resources\\BackEnd\\Scripts\\UI\\Stats.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwCgAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-26T03:25:10.042Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Inventory.cs",
-              "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\Assets\\Resources\\BackEnd\\Scripts\\UI\\Inventory.cs",
-              "RelativeDocumentMoniker": "Assets\\Resources\\BackEnd\\Scripts\\UI\\Inventory.cs",
-              "ToolTip": "C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\Assets\\Resources\\BackEnd\\Scripts\\UI\\Inventory.cs",
-              "RelativeToolTip": "Assets\\Resources\\BackEnd\\Scripts\\UI\\Inventory.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAowEQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-26T03:10:29.088Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Casilla.cs",
-              "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\Assets\\Resources\\BackEnd\\Scripts\\UI\\Casilla.cs",
-              "RelativeDocumentMoniker": "Assets\\Resources\\BackEnd\\Scripts\\UI\\Casilla.cs",
-              "ToolTip": "C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\Assets\\Resources\\BackEnd\\Scripts\\UI\\Casilla.cs",
-              "RelativeToolTip": "Assets\\Resources\\BackEnd\\Scripts\\UI\\Casilla.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-26T02:42:03.388Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "SliderController.cs",
-              "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\Assets\\Resources\\BackEnd\\Scripts\\Core\\SliderController.cs",
-              "RelativeDocumentMoniker": "Assets\\Resources\\BackEnd\\Scripts\\Core\\SliderController.cs",
-              "ToolTip": "C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\Assets\\Resources\\BackEnd\\Scripts\\Core\\SliderController.cs",
-              "RelativeToolTip": "Assets\\Resources\\BackEnd\\Scripts\\Core\\SliderController.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAowDkAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-25T22:43:27.155Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Enemy.cs",
-              "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\Assets\\Resources\\BackEnd\\Scripts\\Core\\Players\\Enemy.cs",
-              "RelativeDocumentMoniker": "Assets\\Resources\\BackEnd\\Scripts\\Core\\Players\\Enemy.cs",
-              "ToolTip": "C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\Assets\\Resources\\BackEnd\\Scripts\\Core\\Players\\Enemy.cs",
-              "RelativeToolTip": "Assets\\Resources\\BackEnd\\Scripts\\Core\\Players\\Enemy.cs",
-              "ViewState": "AgIAAFkAAAAAAAAAAAAIwFcAAAB5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-25T22:19:03.374Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "BattleController.cs",
-              "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\Assets\\Resources\\BackEnd\\Scripts\\Core\\BattleController.cs",
-              "RelativeDocumentMoniker": "Assets\\Resources\\BackEnd\\Scripts\\Core\\BattleController.cs",
-              "ToolTip": "C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\Assets\\Resources\\BackEnd\\Scripts\\Core\\BattleController.cs",
-              "RelativeToolTip": "Assets\\Resources\\BackEnd\\Scripts\\Core\\BattleController.cs",
-              "ViewState": "AgIAAHIAAAAAAAAAAMBcwHcAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-25T22:15:08.938Z"
+              "WhenOpened": "2025-01-26T06:31:10.39Z",
+              "EditorCaption": ""
             }
           ]
         }

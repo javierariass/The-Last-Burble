@@ -10,6 +10,10 @@ public class ButtonMenu : MonoBehaviour
         SceneManager.LoadScene(scene);
     }
 
+    public void Closed()
+    {
+        gameObject.SetActive(false);
+    }
     public void ExitGame()
     {
         Application.Quit();

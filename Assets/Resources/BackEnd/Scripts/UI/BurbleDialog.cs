@@ -14,9 +14,5 @@ public class BurbleDialog : MonoBehaviour
             Dialog.SetActive(true);
             Active = true;
         }
-        if (collision.gameObject.CompareTag("Player") && Active)
-        {
-
-        }
     }
 }
