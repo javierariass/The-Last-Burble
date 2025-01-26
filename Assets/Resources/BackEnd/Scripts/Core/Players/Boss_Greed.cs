@@ -18,16 +18,13 @@ public class Boss_Greed : MonoBehaviour
             Dialogo.SetActive(true);
         }
     }
-    private void OnDestroy()
-    {
-        SceneManager.LoadScene(3);
-    }
 
-    private void Update()
+    private void OnTriggerExit2D(Collider2D collision)
     {
-        if(collider2D == null)
+        if (collision.gameObject.CompareTag("Player"))
         {
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
     }
+
 }

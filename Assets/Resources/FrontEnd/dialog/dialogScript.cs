@@ -31,7 +31,7 @@ public class dialogScript : MonoBehaviour
         dialogText.text = string.Empty;
         startDialog();
         Audio = GetComponent<AudioSource>();
-        GameObject.FindGameObjectWithTag("BattleController").GetComponent<BattleController>().EnTexto = true;
+        if (GameObject.FindGameObjectWithTag("BattleController"))GameObject.FindGameObjectWithTag("BattleController").GetComponent<BattleController>().EnTexto = true;
     }
 
 
@@ -79,7 +79,7 @@ public class dialogScript : MonoBehaviour
             if (EndTutorial) bc.InitBatle();
             if (collider != null) collider.size = new Vector2(3f, 3f);
             if (player != null) player.inCinematic = false;
-            GameObject.FindGameObjectWithTag("BattleController").GetComponent<BattleController>().EnTexto = false;
+            if(GameObject.FindGameObjectWithTag("BattleController")) GameObject.FindGameObjectWithTag("BattleController").GetComponent<BattleController>().EnTexto = false;
             gameObject.SetActive(false);
                   
         }

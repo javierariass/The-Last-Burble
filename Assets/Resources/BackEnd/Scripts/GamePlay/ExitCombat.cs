@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ExitCombat : MonoBehaviour
 {
@@ -36,5 +37,8 @@ public class ExitCombat : MonoBehaviour
     {
         transform.localScale = Vector3.zero;
         Instantiate(particlePrefab, Pos, Quaternion.identity);
+        if (!GameObject.FindGameObjectWithTag("Greed")) SceneManager.LoadScene(3);
     }
+
+    
 }

@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A3D02EB2-6652-9DF6-E415-EFB00DE58184}|Assembly-CSharp.csproj|C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\assets\\resources\\frontend\\dialog\\dialogscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3D02EB2-6652-9DF6-E415-EFB00DE58184}|Assembly-CSharp.csproj|solutionrelative:assets\\resources\\frontend\\dialog\\dialogscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A3D02EB2-6652-9DF6-E415-EFB00DE58184}|Assembly-CSharp.csproj|C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\assets\\resources\\backend\\scripts\\core\\players\\boss_greed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A3D02EB2-6652-9DF6-E415-EFB00DE58184}|Assembly-CSharp.csproj|solutionrelative:assets\\resources\\backend\\scripts\\core\\players\\boss_greed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3D02EB2-6652-9DF6-E415-EFB00DE58184}|Assembly-CSharp.csproj|C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\assets\\resources\\backend\\scripts\\core\\players\\enemyshoot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3D02EB2-6652-9DF6-E415-EFB00DE58184}|Assembly-CSharp.csproj|solutionrelative:assets\\resources\\backend\\scripts\\core\\players\\enemyshoot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3D02EB2-6652-9DF6-E415-EFB00DE58184}|Assembly-CSharp.csproj|C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\assets\\resources\\backend\\scripts\\gameplay\\exitcombat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3D02EB2-6652-9DF6-E415-EFB00DE58184}|Assembly-CSharp.csproj|solutionrelative:assets\\resources\\backend\\scripts\\gameplay\\exitcombat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3D02EB2-6652-9DF6-E415-EFB00DE58184}|Assembly-CSharp.csproj|c:\\users\\javier\\documents\\programacion\\the last burble\\assets\\resources\\frontend\\dialog\\dialogscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3D02EB2-6652-9DF6-E415-EFB00DE58184}|Assembly-CSharp.csproj|solutionrelative:assets\\resources\\frontend\\dialog\\dialogscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A3D02EB2-6652-9DF6-E415-EFB00DE58184}|Assembly-CSharp.csproj|C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\assets\\resources\\backend\\scripts\\tutorial\\tutorial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A3D02EB2-6652-9DF6-E415-EFB00DE58184}|Assembly-CSharp.csproj|solutionrelative:assets\\resources\\backend\\scripts\\tutorial\\tutorial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A3D02EB2-6652-9DF6-E415-EFB00DE58184}|Assembly-CSharp.csproj|c:\\users\\javier\\documents\\programacion\\the last burble\\assets\\resources\\backend\\scripts\\core\\slidercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A3D02EB2-6652-9DF6-E415-EFB00DE58184}|Assembly-CSharp.csproj|C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\assets\\resources\\backend\\scripts\\core\\slidercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A3D02EB2-6652-9DF6-E415-EFB00DE58184}|Assembly-CSharp.csproj|solutionrelative:assets\\resources\\backend\\scripts\\core\\slidercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3D02EB2-6652-9DF6-E415-EFB00DE58184}|Assembly-CSharp.csproj|C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\assets\\resources\\backend\\scripts\\gameplay\\exitcombat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3D02EB2-6652-9DF6-E415-EFB00DE58184}|Assembly-CSharp.csproj|solutionrelative:assets\\resources\\backend\\scripts\\gameplay\\exitcombat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A3D02EB2-6652-9DF6-E415-EFB00DE58184}|Assembly-CSharp.csproj|C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\assets\\resources\\backend\\scripts\\core\\players\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -37,10 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A3D02EB2-6652-9DF6-E415-EFB00DE58184}|Assembly-CSharp.csproj|C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\assets\\resources\\backend\\scripts\\ui\\sounds.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A3D02EB2-6652-9DF6-E415-EFB00DE58184}|Assembly-CSharp.csproj|solutionrelative:assets\\resources\\backend\\scripts\\ui\\sounds.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3D02EB2-6652-9DF6-E415-EFB00DE58184}|Assembly-CSharp.csproj|C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\assets\\resources\\backend\\scripts\\core\\players\\enemyshoot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3D02EB2-6652-9DF6-E415-EFB00DE58184}|Assembly-CSharp.csproj|solutionrelative:assets\\resources\\backend\\scripts\\core\\players\\enemyshoot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,11 +50,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "SliderController.cs",
               "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\Assets\\Resources\\BackEnd\\Scripts\\Core\\SliderController.cs",
               "RelativeDocumentMoniker": "Assets\\Resources\\BackEnd\\Scripts\\Core\\SliderController.cs",
@@ -62,50 +62,50 @@
               "RelativeToolTip": "Assets\\Resources\\BackEnd\\Scripts\\Core\\SliderController.cs",
               "ViewState": "AgIAACcAAAAAAAAAAAAowDsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-26T16:37:20.304Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-26T16:37:20.304Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 1,
               "Title": "EnemyShoot.cs",
               "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\Assets\\Resources\\BackEnd\\Scripts\\Core\\Players\\EnemyShoot.cs",
               "RelativeDocumentMoniker": "Assets\\Resources\\BackEnd\\Scripts\\Core\\Players\\EnemyShoot.cs",
               "ToolTip": "C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\Assets\\Resources\\BackEnd\\Scripts\\Core\\Players\\EnemyShoot.cs",
               "RelativeToolTip": "Assets\\Resources\\BackEnd\\Scripts\\Core\\Players\\EnemyShoot.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwCAAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwCAAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-26T16:00:00.985Z"
+              "WhenOpened": "2025-01-26T16:00:00.985Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Boss_Greed.cs",
               "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\Assets\\Resources\\BackEnd\\Scripts\\Core\\Players\\Boss_Greed.cs",
               "RelativeDocumentMoniker": "Assets\\Resources\\BackEnd\\Scripts\\Core\\Players\\Boss_Greed.cs",
               "ToolTip": "C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\Assets\\Resources\\BackEnd\\Scripts\\Core\\Players\\Boss_Greed.cs",
               "RelativeToolTip": "Assets\\Resources\\BackEnd\\Scripts\\Core\\Players\\Boss_Greed.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-26T15:08:28.201Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "dialogScript.cs",
               "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\Assets\\Resources\\FrontEnd\\dialog\\dialogScript.cs",
               "RelativeDocumentMoniker": "Assets\\Resources\\FrontEnd\\dialog\\dialogScript.cs",
               "ToolTip": "C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\Assets\\Resources\\FrontEnd\\dialog\\dialogScript.cs",
               "RelativeToolTip": "Assets\\Resources\\FrontEnd\\dialog\\dialogScript.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAQwDYAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAEwCYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-26T14:49:55.195Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Tutorial.cs",
               "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\Assets\\Resources\\BackEnd\\Scripts\\Tutorial\\Tutorial.cs",
               "RelativeDocumentMoniker": "Assets\\Resources\\BackEnd\\Scripts\\Tutorial\\Tutorial.cs",
@@ -113,12 +113,11 @@
               "RelativeToolTip": "Assets\\Resources\\BackEnd\\Scripts\\Tutorial\\Tutorial.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-26T10:44:25.733Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-26T10:44:25.733Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Sounds.cs",
               "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\Assets\\Resources\\BackEnd\\Scripts\\UI\\Sounds.cs",
               "RelativeDocumentMoniker": "Assets\\Resources\\BackEnd\\Scripts\\UI\\Sounds.cs",
@@ -130,19 +129,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "ExitCombat.cs",
               "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\Assets\\Resources\\BackEnd\\Scripts\\GamePlay\\ExitCombat.cs",
               "RelativeDocumentMoniker": "Assets\\Resources\\BackEnd\\Scripts\\GamePlay\\ExitCombat.cs",
               "ToolTip": "C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\Assets\\Resources\\BackEnd\\Scripts\\GamePlay\\ExitCombat.cs",
               "RelativeToolTip": "Assets\\Resources\\BackEnd\\Scripts\\GamePlay\\ExitCombat.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAQwCcAAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-26T09:20:43.989Z"
+              "WhenOpened": "2025-01-26T09:20:43.989Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Enemy.cs",
               "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\Assets\\Resources\\BackEnd\\Scripts\\Core\\Players\\Enemy.cs",
               "RelativeDocumentMoniker": "Assets\\Resources\\BackEnd\\Scripts\\Core\\Players\\Enemy.cs",
@@ -154,7 +154,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\Assets\\Resources\\BackEnd\\Scripts\\Core\\Players\\Player.cs",
               "RelativeDocumentMoniker": "Assets\\Resources\\BackEnd\\Scripts\\Core\\Players\\Player.cs",
@@ -166,7 +166,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "BattleController.cs",
               "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Programacion\\The Last Burble\\Assets\\Resources\\BackEnd\\Scripts\\Core\\BattleController.cs",
               "RelativeDocumentMoniker": "Assets\\Resources\\BackEnd\\Scripts\\Core\\BattleController.cs",
