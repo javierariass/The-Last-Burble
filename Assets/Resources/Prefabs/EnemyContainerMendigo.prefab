@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1499959471016322587}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.507, y: -0.165, z: 0}
+  m_LocalPosition: {x: -0.21, y: -0.31, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -109,7 +109,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1499959471621681282}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.049066305, y: -0.042383492, z: 0.0039239633}
+  m_LocalPosition: {x: 0.63, y: -0.92, z: 0.0039239633}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -200,8 +200,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52eb15d871c98e746b52290279b452f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Mendigo
+  Name: 
   Life: 5
+  LifeMax: 0
   expDropped: 2
   DamageMin: 2
   DamageMax: 3
@@ -209,6 +210,12 @@ MonoBehaviour:
   PointRutine:
   - {fileID: 1499959471016322587}
   - {fileID: 1499959472193297727}
+  droppedItem: []
+  Person: {fileID: 0}
+  cameraVirtual: {fileID: 0}
+  Camera: {fileID: 0}
+  confiner: {fileID: 0}
+  attackDuration: 5
 --- !u!50 &1499959471621681288
 Rigidbody2D:
   serializedVersion: 4
@@ -278,7 +285,7 @@ Transform:
   - {fileID: 1499959472193297726}
   - {fileID: 1499959471621681286}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1499959472193297727
 GameObject:
@@ -306,7 +313,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1499959472193297727}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.85, y: -0.192, z: 0}
+  m_LocalPosition: {x: 4.15, y: 0.62, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
