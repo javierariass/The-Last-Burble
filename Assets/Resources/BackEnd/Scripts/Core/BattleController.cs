@@ -8,8 +8,8 @@ using UnityEngine.SceneManagement;
 public class BattleController : MonoBehaviour
 {
     public bool inDefense = false;
-    public GameObject CombatSystem,DefenseZone,Combat,Person,SliderHit,SpawnObject,ButtonBack;
-    public GameObject[] SpawnPoint;
+    public GameObject CombatSystem,DefenseZone,Combat,Person,SliderHit,SpawnObject,ButtonBack,Alert;
+    public GameObject SpawnPoint;
     public Enemy enemy;
     public SpriteRenderer Enemy;
     private Player player;
@@ -81,29 +81,23 @@ public class BattleController : MonoBehaviour
     {
         if (Counterlife > 0)
         {
-
+            Counterlife--;
             InBatle = false;
             inDefense = false;
             enemy.Life = enemy.LifeMax;
-            int sp = Random.Range(0, SpawnPoint.Length);
-            player.transform.position = SpawnPoint[sp].transform.position;
-            player.desLevelUp();
+            player.transform.position = SpawnPoint.transform.position;
             enemy.cameraVirtual.Follow = GameObject.FindGameObjectWithTag("Player").transform;
             enemy.cameraVirtual.GetComponent<CinemachineConfiner>().m_BoundingShape2D = GameObject.FindGameObjectWithTag("StageConfiner").GetComponent<PolygonCollider2D>();
             enemy.cameraVirtual.GetComponent<CinemachineConfiner>().InvalidatePathCache();
             GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().inCinematic = false;
             Combat.SetActive(false);
             enemy = null;
-            Counterlife--;
             uiUser.SetActive(true);
             audioSource.clip = Audios.SoundStage;
             audioSource.Play();
             UIexitCombat.Life = Counterlife.ToString();
             UIexitCombat.GeneratePerdidas();
-            
-            
         }
-        else SceneManager.LoadScene(0);
     }
 
     public void InitBatle()
@@ -161,7 +155,7 @@ public class BattleController : MonoBehaviour
     public void InitDefense()
     {
         Person.transform.position = SpawnObject.transform.position;
-        if (TutorialComplete) StartCoroutine(Defense());
+        if (TutorialComplete) StartCoroutine(DefenseAlert());
         else if(!TutorialComplete && PasoTutorial == 2)
         {
             CombatTutorial[2].SetActive(true);
@@ -179,6 +173,14 @@ public class BattleController : MonoBehaviour
         CombatTutorial[0].SetActive(true);
         PasoTutorial++;
         EnemyName.text = enemy.Name;
+    }
+
+    public IEnumerator DefenseAlert()
+    {
+        Alert.SetActive(true);
+        yield return new WaitForSeconds(2f);
+        Alert.SetActive(false);
+        StartCoroutine(Defense());
     }
     public IEnumerator Defense()
     {

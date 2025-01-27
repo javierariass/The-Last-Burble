@@ -50,7 +50,8 @@ public class Enemy : MonoBehaviour
     void Update()
     {
         //Movement
-        if (!Person.GetComponent<PlayerCorePerson>().player.inCinematic) transform.position = Vector2.MoveTowards(transform.position, PointRutine[PointIndex].transform.position, SpeedMove * Time.deltaTime);
+        if (!Person.GetComponent<PlayerCorePerson>().player.inCinematic)
+            transform.position = Vector2.MoveTowards(transform.position, PointRutine[PointIndex].transform.position, SpeedMove * Time.deltaTime);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -96,7 +97,7 @@ public class Enemy : MonoBehaviour
             if (droppedItem.Length != 0)
             {
                 int Probabilidad = Random.Range(0, 11);
-                if (Probabilidad > 6)
+                if (Probabilidad > 3)
                 {
                     Probabilidad = Random.Range(0, droppedItem.Length);
                     GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().addItem(droppedItem[Probabilidad]);

@@ -59,9 +59,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Resources\BackEnd\Scripts\UI\BurbleDialog.cs" />
+    <Compile Include="Assets\Resources\BackEnd\Scripts\UI\LaunchBurble.cs" />
+    <Compile Include="Assets\Resources\BackEnd\Scripts\UI\BurbleDirection.cs" />
     <Compile Include="Assets\Resources\BackEnd\Scripts\Core\Items\GrandmaPotionItem.cs" />
     <Compile Include="Assets\Resources\BackEnd\Scripts\Tutorial\Tutorial.cs" />
     <Compile Include="Assets\Resources\BackEnd\Scripts\Core\Players\Enemy.cs" />
+    <Compile Include="Assets\Resources\BackEnd\Scripts\UI\Resolution.cs" />
     <Compile Include="Assets\Resources\BackEnd\Scripts\UI\SceneEnemyTransition.cs" />
     <Compile Include="Assets\Resources\BackEnd\Scripts\GamePlay\TrasladePlayer.cs" />
     <Compile Include="Assets\Resources\BackEnd\Scripts\Core\Players\Player.cs" />
@@ -88,6 +91,7 @@
     <Compile Include="Assets\Resources\BackEnd\Scripts\UI\Casilla.cs" />
     <Compile Include="Assets\Resources\BackEnd\Scripts\Core\Items\AtackTwiceItem.cs" />
     <Compile Include="Assets\Resources\BackEnd\Scripts\Core\EnemySpawnerController.cs" />
+    <Compile Include="Assets\Resources\BackEnd\Scripts\UI\BurbleGenerator.cs" />
     <Compile Include="Assets\Resources\BackEnd\Scripts\Core\Players\SpawnerShoot.cs" />
     <Compile Include="Assets\Resources\BackEnd\Scripts\UI\EarthTransition.cs" />
   </ItemGroup>

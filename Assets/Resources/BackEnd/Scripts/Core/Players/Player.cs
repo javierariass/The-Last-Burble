@@ -133,13 +133,9 @@ public class Player : MonoBehaviour
         Audio.loop = false;
         Audio.clip = TakeDamage;
         Audio.Play();
-        bool isLive = true;
         if (damage >= Life)
         {
             Life = 0;
-            isLive = false;
-            if (Level > 1)
-                desLevelUp();
         }
         else
             Life -= damage;

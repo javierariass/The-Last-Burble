@@ -15,7 +15,7 @@ public class ExitCombat : MonoBehaviour
     public AudioClip Win, Lose;
     public AudioSource Audio;
     public string Life;
-
+    public Player player;
     public void GenerateDatos()
     {
         Audio.clip = Win;
@@ -30,14 +30,16 @@ public class ExitCombat : MonoBehaviour
         Audio.clip = Lose;
         Audio.Play();
         transform.localScale = Vector3.one;
-        Experiencia.text = "Has Muerto, aun tienes una oportunidad de salvar el mundo. Tomala";
-        Dropeado.text = "Restan: " + Life;
+        Experiencia.text = "Has Muerto...";
+        Dropeado.text = "Reapariciones restantes: " + Life;
+        player.desLevelUp();
     }
     public void ExitZone()
     {
         transform.localScale = Vector3.zero;
         Instantiate(particlePrefab, Pos, Quaternion.identity);
-        if (!GameObject.FindGameObjectWithTag("Greed")) SceneManager.LoadScene(3);
+        if (!GameObject.FindGameObjectWithTag("Greed") && int.Parse(Life) > 0) SceneManager.LoadScene(2);
+        if(int.Parse(Life) == 0) SceneManager.LoadScene(0);
     }
 
     

@@ -28,7 +28,7 @@ public class dialogScript : MonoBehaviour
     public AudioSource Audio;
     void Start()
     {
-        dialogText.text = string.Empty;
+        dialogText.text = "";
         startDialog();
         Audio = GetComponent<AudioSource>();
         if (GameObject.FindGameObjectWithTag("BattleController"))GameObject.FindGameObjectWithTag("BattleController").GetComponent<BattleController>().EnTexto = true;
@@ -75,7 +75,7 @@ public class dialogScript : MonoBehaviour
         else{
             if(animator != null)animator.SetTrigger("Traslade");
             if (CombatAction != null) CombatAction.SetActive(true);
-            if (bc != null && !EndTutorial) bc.StartCoroutine(bc.Defense());
+            if (bc != null && !EndTutorial) bc.StartCoroutine(bc.DefenseAlert());
             if (EndTutorial) bc.InitBatle();
             if (collider != null) collider.size = new Vector2(3f, 3f);
             if (player != null) player.inCinematic = false;
