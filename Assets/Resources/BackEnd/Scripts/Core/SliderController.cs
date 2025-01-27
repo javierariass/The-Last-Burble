@@ -7,13 +7,13 @@ using System.Collections;
 public class SliderController : MonoBehaviour
 {
     public Slider hitBar; // Asigna el Slider desde el Inspector
-    public float duration = 5f; // Duración para ir de 0 a 100 y de 100 a 0
-    private bool increasing = true; // Controla la dirección del slider
+    public float duration = 5f; // Duraciï¿½n para ir de 0 a 100 y de 100 a 0
+    private bool increasing = true; // Controla la direcciï¿½n del slider
     public BattleController Bc;
 
     void Start()
     {
-        hitBar.maxValue = 100f; // Establece el valor máximo del slider
+        hitBar.maxValue = 100f; // Establece el valor mï¿½ximo del slider
         hitBar.value = 0f; // Inicializa el slider en 0
         StartCoroutine(UpdateSlider());
     }

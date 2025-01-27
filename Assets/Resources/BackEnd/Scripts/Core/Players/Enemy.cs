@@ -27,6 +27,7 @@ public class Enemy : MonoBehaviour
     public GameObject uiUser;
     private ExitCombat HistCombat;
     private AudioSource Audio;
+    public int cantSpawner = 5;
     private Sounds sounds;
     // Start is called before the first frame update
     void Start()
@@ -92,7 +93,7 @@ public class Enemy : MonoBehaviour
             GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().inCinematic = false;
             Bc.Combat.SetActive(false);
             GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().takeExperience(expDropped);
-
+            GameObject.FindGameObjectWithTag("object").SetActive(false);
             //Dropeo
             if (droppedItem.Length != 0)
             {

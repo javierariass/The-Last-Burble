@@ -185,6 +185,7 @@ public class BattleController : MonoBehaviour
     public IEnumerator Defense()
     {
         DefenseZone.SetActive(true);
+        DefenseZone.GetComponent<EnemySpawnerController>().cantSpawner = enemy.cantSpawner;
         DefenseZone.GetComponent<EnemySpawnerController>().ShootSpawn = false;
         Person.SetActive(true);
         inDefense = true;

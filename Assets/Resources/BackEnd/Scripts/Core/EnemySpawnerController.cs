@@ -6,6 +6,7 @@ public class EnemySpawnerController : MonoBehaviour
 {
     public List<SpawnerShoot> spawners = new List<SpawnerShoot>();
     public bool ShootSpawn = false;
+    public int cantSpawner;
 
     // Start is called before the first frame update
     void Start()
@@ -20,7 +21,7 @@ public class EnemySpawnerController : MonoBehaviour
        {
         int cont = 0;
         List<int> results = randomShoot();
-        while(cont<5)
+        while(cont<cantSpawner)
         {
             spawners[results[cont]].Shoot();
             cont++;
@@ -40,7 +41,7 @@ public class EnemySpawnerController : MonoBehaviour
     {
         List<int> result = new List<int>();
 
-        for (int i = 0; i < 5; i++)
+        for (int i = 0; i < cantSpawner; i++)
         {
             result.Add(Random.Range(1,spawners.Count));
         }
