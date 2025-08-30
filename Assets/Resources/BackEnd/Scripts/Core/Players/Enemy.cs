@@ -93,7 +93,7 @@ public class Enemy : MonoBehaviour
             GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().inCinematic = false;
             Bc.Combat.SetActive(false);
             GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().takeExperience(expDropped);
-            GameObject.FindGameObjectWithTag("object").SetActive(false);
+            Person.SetActive(false);
             //Dropeo
             if (droppedItem.Length != 0)
             {
